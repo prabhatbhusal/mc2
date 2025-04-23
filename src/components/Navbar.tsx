@@ -55,7 +55,7 @@ const Navbar = () => {
         className="relative bg-primary text-xl text-white items-center flex font-regular gap-2 p-2 sm:p-3 ml-1 sm:ml-2"
       >
         <MdOutlinePhone />
-        <span className="hidden xs:inline sm:inline">(254) 393-6078</span>
+        <span className="hidden xs:inline sm:inline font-light">(254) 393-6078</span>
         <span className="h-8 w-7 bg-black rotate-45 absolute top-11 left-49"></span>
       </Button>
       {/* Mobile Nav Dropdown */}
