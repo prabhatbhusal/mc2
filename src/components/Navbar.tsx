@@ -13,13 +13,13 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="flex justify-between items-center px-4 sm:px-8 md:px-[90px] mt-3 sm:mt-5 fixed w-full z-[100] bg-transparent">
+    <div className="flex justify-between items-center px-4 sm:px-8 md:px-[90px] mt-3 sm:mt-5 w-full fixed z-[100] bg-transparent">
       {/* Logo */}
       <div className="bg-[#575757CC] h-[50px] sm:h-[65px] md:h-[89px] rounded-xl px-2 flex items-center">
         <Image
           alt="logo"
           src="/images/logo.png"
-          className="h-[38px] sm:h-[50px] md:h-[89px] w-[100px] sm:w-[140px] md:w-[245px] p-1 sm:p-2 object-contain bg-[#575757bb] rounded-xl"
+          className="h-[38px] sm:h-[50px] md:h-[89px] w-[100px] sm:w-[140px] md:w-[245px] p-1 sm:p-2 object-contain bg-transparent rounded-xl"
           height={38}
           width={245}
         />
@@ -33,7 +33,7 @@ const Navbar = () => {
             className="flex items-center gap-2 relative"
           >
             {pathname === link.url && (
-              <span className="text-primary text-lg">&#9679;</span>
+              <span className="text-white text-[8px]">&#9679;</span>
             )}
             {link.title}
           </Link>
@@ -52,7 +52,7 @@ const Navbar = () => {
       {/* Phone Button */}
       <Button
         size="lg"
-        className="relative bg-primary text-xl text-white items-center flex font-medium gap-2 p-2 sm:p-3 ml-1 sm:ml-2"
+        className="relative bg-primary text-xl text-white items-center flex font-regular gap-2 p-2 sm:p-3 ml-1 sm:ml-2"
       >
         <MdOutlinePhone />
         <span className="hidden xs:inline sm:inline">(254) 393-6078</span>
@@ -69,7 +69,7 @@ const Navbar = () => {
               onClick={() => setMenuOpen(false)}
             >
               {pathname === link.url && (
-                <span className="text-primary text-lg">&#9679;</span>
+                <span className="text-white text-[8px]">&#9679;</span>
               )}
               {link.title}
             </Link>

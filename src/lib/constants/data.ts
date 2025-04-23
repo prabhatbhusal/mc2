@@ -68,21 +68,21 @@ export const Footerareas = [
   },
   {
     id: 6,
-    content: "Harker Heights",
+    content: "HARKER HEIGHTS",
   },
   {
     id: 7,
-    content: "Morgan’s Point",
+    content: "MORGAN’S POINT",
   },
   {
     id: 8,
-    content: "Salado",
+    content: "SALADO",
   },
 ];
 export const Footerserve = [
   {
     id: 1,
-    content: "Towing",
+    content: "TOWING",
   },
   {
     id: 2,

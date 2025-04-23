@@ -1,15 +1,11 @@
 import Contact from "@/components/page/landing/contact";
-import PageBanner from "@/components/PageBanner";
+import Page from '@/components/page/landing/Home'
 
 
 export default function Home() {
   return (
     <main>
-      <PageBanner
-        title="Home Page"
-        currentPage="Home"
-        links={[{ title: "Home", url: "/" }]}
-      />
+      <Page/>
       <Contact />
     </main>
   );}
