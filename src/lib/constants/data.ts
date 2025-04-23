@@ -3,32 +3,29 @@ import { NavItems } from '@/types/navbar.types';
 export const navItems: NavItems[] = [
   {
 	id: 1,
-	title: 'Home',
+	title: 'HOME',
 	url: '/'
   },
   {
 	id: 2,
-	title: 'About Us',
+	title: 'ABOUT',
 	url: '/about'
   }
   ,
   {
 	id: 3,
-	title: 'Services',
+	title: 'SERVICES',
 	url: '/services'
   }
   ,
   {
 	id: 4,
-	title: 'Our Work',
+	title: 'OUR WORK',
 	url: '/work'
-  }
-  ,
-
-  ,
+  },
   {
 	id:5,
-	title: 'Contact',
+	title: 'CONTACT',
 	url: '/contact'
   }
 ];
