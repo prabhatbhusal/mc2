@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 import { Orbitron } from "next/font/google";
+import Contact from "@/components/page/landing/contact";
 
 const orbitron = Orbitron({
   subsets: ["latin"],
@@ -31,6 +32,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Contact/>
         <Footer />
       </body>
     </html>

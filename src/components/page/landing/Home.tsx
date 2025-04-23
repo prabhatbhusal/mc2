@@ -5,14 +5,22 @@ import { Button } from "@/components/ui/button";
 
 const Landingpage = () => {
   return (
-    <div className="bg-[url(/images/background.png)] h-[100vh] bg-blend-overlay flex flex-row justify-center items-center">
-      <div className="w-[90%] flex flex-col justify-center items-center">
-        <p className="text-lg">POLK ROADSIDE ASSITANCE</p>
-        <hr className="w-10 text-center" />
+    <div className="h-[100vh] bg-blend-overlay flex flex-row justify-center items-center px-7 gap-2">
+      <video
+        autoPlay
+        muted
+        loop
+        className="object-cover h-[100vh] w-full absolute grayscale"
+      >
+        <source src="/video/video.mp4" type="video/mp4" />
+      </video>
+      <div className="w-[80%] flex flex-col justify-center items-center gap-7 z-10 ">
+        <p className="text-lg text-white">POLK ROADSIDE ASSITANCE</p>
+        <hr className="w-10 text-center text-white" />
         <h1 className="font-bold text-[100px] text-center">
           24/7 Roadside Assistance
         </h1>
-        <h2 className="font-bold text-[100px] text-center text">
+        <h2 className="font-bold text-[100px] text-center bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
           Anytime, Anywhere!
         </h2>
         <p>
@@ -21,7 +29,9 @@ const Landingpage = () => {
           emergency.
         </p>
         <div className="flex gap-5">
-          <button className="orbitron border-1 border-white px-10 py-2 text-white font-light">Text As Now</button>
+          <button className="orbitron border-1 border-white px-10 py-2 text-white font-light">
+            Text As Now
+          </button>
           <Button
             size="lg"
             className="relative bg-primary text-xl text-white items-center flex font-regular gap-2 p-2 sm:p-3 ml-1 sm:ml-2"
@@ -30,12 +40,11 @@ const Landingpage = () => {
               Call Us Now
             </span>
             <MdArrowOutward />
-            <span className="h-8 w-7 bg-black rotate-45 absolute top-11 left-49"></span>
+            <span className="h-8 w-7 bg-transparent rotate-45 absolute top-11 left-49"></span>
           </Button>
-
         </div>
       </div>
-      <div className="w-10% flex flex-col justify-center items-center gap-5">
+      <div className="w-20% flex flex-col justify-center items-center gap-5">
         <span className="rounded-full bg-neutral-500 px-5 py-3 ">
           <Image src="/icons/location.svg" alt="logo" height={8} width={20} />
         </span>

@@ -7,7 +7,7 @@ const Footer = () => {
       className="overflow-x-hidden
 "
     >
-      <div className="bg-black text-white flex flex-col items-center gap-18 h-[500px] py-5 overflow-x-hidden ">
+      <div className="bg-[url(/images/bg.png)] bg-blend-multiply bg-neutral-500 text-white flex flex-col items-center gap-18 h-[500px] py-5 overflow-x-hidden ">
         <div className="h-[10%]">
           <div
             className="bg-[#575757CC
@@ -80,7 +80,6 @@ const Footer = () => {
             DESIGNED BY ISTEM AI WEB STUDIOS
           </p>
         </div>
-        
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button';
 const contact = () => {
   return (
-    <div className=" flex justify-center items-center px-5 bg-neutral-800  ">
+    <div className=" flex justify-center items-center px-5 gap-10 ">
       <div>
         <Image
           src="/images/brokencar.png"
@@ -14,13 +14,19 @@ const contact = () => {
         />
       </div>
 
-      <div className="text-white p-[50px]">
-        <h3>Contact Us</h3>
-        <h1 className=" text-white text-2xl font-orbitron inline-block hover:text-gray-300 transition duration-300">
-          Get <span className="text-red-600 hover:text-red-400">Help</span> Now
-        </h1>
-
-        <form action="">
+      <div className="text-white p-[50px] gap-20">
+        <div className="flex flex-col gap-5">
+          <div>
+            <h3>Contact Us</h3>
+          </div>
+          <div>
+            <h1 className=" text-white text-2xl font-orbitron  hover:text-gray-300 transition duration-300">
+              Get <span className="text-red-600 hover:text-red-400">Help</span>{" "}
+              Now
+            </h1>
+          </div>
+        </div>{" "}
+        <form action="" className="flex flex-col gap-10">
           <div className="flex gap-10">
             {" "}
             <div className="flex flex-col">
@@ -34,23 +40,30 @@ const contact = () => {
               <hr className="text-neutral-700" />
             </div>
           </div>
-          <div className="flex flex-col">
-            <label htmlFor="">Email</label>
-            <input type="email" />
-            <hr className="text-neutral-700" />
-            <label htmlFor="">Message</label>
-            <input type="text" />
-            <hr className="text-neutral-700" />
+          <div className="flex flex-col gap-10">
+            <div>
+              <label htmlFor="">Email</label>
+              <input type="email" />
+              <hr className="text-neutral-700" />
+            </div>
+            <div>
+              <label htmlFor="">Message</label>
+              <input type="text" />
+              <hr className="text-neutral-700" />
+            </div>
           </div>
-          <Button
-            size="lg"
-            className="relative bg-primary text-xl text-white items-center flex font-medium gap-2 p-2 sm:p-3 ml-1 sm:ml-2"
-          >
-            <span className="hidden xs:inline sm:inline font-orbitron">
-              Get Contact
-            </span>
-            <span className="h-8 w-7 bg-neutral-800 rotate-45 absolute top-12 left-31"></span>
-          </Button>
+          <div>
+            <Button
+              size="lg"
+              className="relative bg-primary text-xl text-white items-center flex font-regular gap-2 p-2 sm:p-3 ml-1 sm:ml-2"
+            >
+              <h6 className="hidden xs:inline sm:inline font-regular text-lg">
+                Get Contact
+              </h6>
+              <span className="h-10 w-5 bg-primary absolute top-0 right-[-20] "></span>
+              <span className="h-7 w-6 bg-primary rotate-45 absolute top-7 left-33"></span>
+            </Button>
+          </div>
         </form>
       </div>
     </div>
