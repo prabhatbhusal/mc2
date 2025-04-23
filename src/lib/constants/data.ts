@@ -20,18 +20,14 @@ export const navItems: NavItems[] = [
   ,
   {
 	id: 4,
-	title: 'Gallery',
-	url: '/gallery'
+	title: 'Our Work',
+	url: '/work'
   }
   ,
-  {
-	id: 5,
-	title: 'Free Estimate',
-	url: '/freeestimate'
-  }
+
   ,
   {
-	id:6,
+	id:5,
 	title: 'Contact',
 	url: '/contact'
   }
