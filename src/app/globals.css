@@ -1,14 +1,19 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-
 html,body{
   scroll-behavior: smooth;
 
 
 }
-.primary{
-  background-color:#D23631;
+h1,h2,h3,h4,h5,h6{
+  font-family:'Orbitron';
 }
-.text-prime{
-  color:#D23631
+@theme {
+  --color-primary: var(--primary-color);
+  --color-secondary:var(--secondary-color);
+}
+
+:root {
+  --primary-color: #D23631;
+  --secondary-color:#8A9E41;
 }

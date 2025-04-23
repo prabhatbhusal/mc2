@@ -1,3 +1,4 @@
+import Contact from "@/components/page/landing/contact";
 import PageBanner from "@/components/PageBanner";
 
 
@@ -9,5 +10,6 @@ export default function Home() {
         currentPage="Home"
         links={[{ title: "Home", url: "/" }]}
       />
+      <Contact />
     </main>
-    )}
+  );}

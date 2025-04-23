@@ -10,7 +10,7 @@ interface PageBannerSliderProps {
 const PageBanner = ({ title, currentPage, links = [] }: PageBannerSliderProps) => {
     return (
         <div className="relative min-h-[300px] overflow-hidden bg-black md:min-h-[400px] lg:min-h-[600px]">
-            <Image src={`/wood-flooring.jpg`} alt="img" fill className="absolute inset-0 h-full w-full object-cover" />
+            <Image src={`/images/`} alt="img" fill className="absolute inset-0 h-full w-full object-cover" />
             {/* Dark overlay */}
             <div className="absolute inset-0 z-20 bg-[#091120] opacity-65"></div>
             {/* Text content */}
