@@ -35,7 +35,7 @@ const Navbar = () => {
             )
         )}
       </div>
-      <div className="bg-[#D23631] flex ">
+      <div className="primary flex ">
         <button className='text-xl text-white  items-center flex font-medium gap-2 p-3'>
           <MdOutlinePhone />
           (254) 393-6078

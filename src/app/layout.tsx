@@ -26,11 +26,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <style>
+        @import
+        url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap');
+      </style>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      ><Navbar/>
+      >
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

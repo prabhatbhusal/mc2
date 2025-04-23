@@ -1,10 +1,9 @@
-import React from 'react'
-import Image from 'next/image'
-import { MdOutlinePhone } from 'react-icons/md';
-import { Footerareas, Footercontact, Footerserve } from '@/lib/constants/data';
+import React from "react";
+import Image from "next/image";
+import { Footerareas, Footercontact, Footerserve } from "@/lib/constants/data";
 const Footer = () => {
   return (
-    <div className="bg-black text-white flex flex-col items-center ">
+    <div className="bg-black text-white flex flex-col items-center gap-18 h-[500px] ">
       <div className="h-[10%]">
         <div
           className="bg-[#575757CC
@@ -19,42 +18,53 @@ const Footer = () => {
           />
         </div>
       </div>
+
       <div className="grid grid-cols-3 gap-100">
-        <div>
-          <h3>Contact</h3>
-          {Footercontact.map((items) => (
-            <div className="flex gap-2" key={items.id}>
-              <Image
-                src={items.url}
-                alt="logo"
-                height={10}
-                width={20}
-                className="fill object-contain"
-              />
-              <span>{items.content}</span>
-            </div>
-          ))}
-          <div></div>
+        <div className="flex flex-col gap-5">
+          <div>
+            <h3>Contact</h3>
+            <hr className="text-prime w-10 border-1 " />
+            {Footercontact.map((items) => (
+              <div className="flex gap-2" key={items.id}>
+                <Image
+                  src={items.url}
+                  alt="logo"
+                  height={10}
+                  width={20}
+                  className="fill object-contain"
+                />
+                <span>{items.content}</span>
+              </div>
+            ))}
+          </div>
+          <div>
+            <h3>Business hours</h3>
+            <hr className="text-prime w-10 border-1 " />
+            <span>MON-FRI: 9:00AM - 5:00PM </span>
+            <span>SAT-SUN: Closed</span>
+          </div>
         </div>
 
         <div>
-          <h3 className='text-center'>Areas We Serve</h3>
+          <h3>Areas We Serve</h3>
+          <hr className="text-prime w-10 border-1 " />
           <div className="grid grid-cols-2 gap-3">
             {Footerareas.map((items) => (
               <div className="flex flex-col gap-2" key={items.id}>
                 <span>{items.content}</span>
-                <hr className='h-1 w-40' />
+                <hr className="h-1 w-40" />
               </div>
             ))}
           </div>
         </div>
         <div>
-          <h3 className='text-center'>Services</h3>
-          <div className="grid grid-cols-2">
+          <h3>Services</h3>
+          <hr className="text-prime w-10 border-1 " />
+          <div className="grid grid-cols-2 ">
             {Footerserve.map((items) => (
-              <div className="flex gap-2" key={items.id}>
+              <div className="flex  flex-col gap-3" key={items.id}>
                 <span>{items.content}</span>
-                <hr />
+                <hr className="h-1 w-40" />
               </div>
             ))}
           </div>
@@ -68,6 +78,6 @@ const Footer = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Footer
+export default Footer;

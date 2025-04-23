@@ -3,6 +3,12 @@
 
 html,body{
   scroll-behavior: smooth;
-  
 
+
+}
+.primary{
+  background-color:#D23631;
+}
+.text-prime{
+  color:#D23631
 }
