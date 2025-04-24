@@ -121,3 +121,6 @@ export const Footerserve = [
     content: "Air Delivery Services",
   },
 ];
+export const galleryimg=[{
+  url:'/Gallery/image'
+}]

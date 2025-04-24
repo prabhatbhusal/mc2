@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button';
 const contact = () => {
   return (
-    <div className=" flex justify-center items-center px-5 gap-10 ">
+    <div className=" flex justify-center items-center px-5 gap-10 font-medium ">
       <div>
         <Image
           src="/images/brokencar.png"
@@ -15,18 +15,18 @@ const contact = () => {
       </div>
 
       <div className="text-white p-[50px] gap-20">
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-2">
           <div>
-            <h3>Contact Us</h3>
+            <h3 className='text-base '>Contact Us</h3>
           </div>
           <div>
-            <h1 className=" text-white text-2xl font-orbitron  hover:text-gray-300 transition duration-300">
+            <h2 className=" text-white text-[44px] font-orbitron  hover:text-gray-300 transition duration-300">
               Get <span className="text-red-600 hover:text-red-400">Help</span>{" "}
               Now
-            </h1>
+            </h2>
           </div>
         </div>{" "}
-        <form action="" className="flex flex-col gap-10">
+        <form action="" className="flex flex-col gap-10 text-neutral-600">
           <div className="flex gap-10">
             {" "}
             <div className="flex flex-col">

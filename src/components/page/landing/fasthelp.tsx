@@ -28,18 +28,18 @@ const fasthelp = () => {
           <p className="">Mon - Sun (12:00 AM -12:00 PM)</p>
           <p className="w-200">
             When you find yourself stranded on the side of the road in Killeen,
-            TX the last thing you want to worry about is how to get help. That's
+            TX the last thing you want to worry about is how to get help. That&apos;s
             where our reliable 24/7 roadside assistance service comes to the
             rescue.
           </p>
           <div className="">
             <Button
               size="lg"
-              className="relative bg-primary text-xl text-white items-center flex font-regular gap-2 p-2 sm:p-3 ml-1 sm:ml-2"
+              className="relative bg-primary text-md space-x-0.5 text-white items-center flex font-regular gap-2 p-2 sm:p-3 ml-1 sm:ml-2"
             >
-              <span className="hidden xs:inline sm:inline font-light">
+              <h6 className="hidden xs:inline sm:inline font-medium">
                 Request Virtual Estimate
-              </span>
+              </h6>
               <span className="h-10 w-5 bg-primary absolute top-0 right-[-20] "></span>
               <span className="h-7 w-7 bg-primary rotate-45 absolute top-6.5 left-58.5"></span>
             </Button>

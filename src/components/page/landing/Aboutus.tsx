@@ -21,13 +21,13 @@ const Aboutus = () => {
         <div>
           <Button
             size="lg"
-            className="relative bg-primary text-xl text-white items-center flex font-regular gap-2 p-2 sm:p-3 ml-1 sm:ml-2"
+            className="relative bg-primary text-md text-white items-center flex font-regular gap-2 p-1 sm:p-3 ml-1 sm:ml-2"
           >
-            <span className="hidden xs:inline sm:inline font-light">
-              (254) 393-6078
-            </span>
+            <h6 className="hidden xs:inline sm:inline font-medium">
+              Contact Now
+            </h6>
             <span className="h-10 w-5 bg-primary absolute top-0 right-[-20] "></span>
-            <span className="h-7 w-7 bg-primary rotate-45 absolute top-6.5 left-41.5"></span>
+            <span className="h-7 w-7 bg-primary rotate-45 absolute top-6.5 left-31.5"></span>
           </Button>
         </div>
       </div>

@@ -1,11 +1,9 @@
 import React from 'react'
 
 const testimonials = () => {
-  return (
-    <div>
-        
-    </div>
-  )
+  return <div>
+    
+  </div>;
 }
 
 export default testimonials

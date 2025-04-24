@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { MdArrowOutward } from "react-icons/md";
+import { MdArrowOutward } from "react-icons/md"
 import { Button } from "@/components/ui/button";
 
 const Landingpage = () => {
@@ -36,11 +36,12 @@ const Landingpage = () => {
             size="lg"
             className="relative bg-primary text-xl text-white items-center flex font-regular gap-2 p-2 sm:p-3 ml-1 sm:ml-2"
           >
-            <span className="hidden xs:inline sm:inline font-orbitron font-light">
+            <span className="hidden xs:inline sm:inline font-light">
               Call Us Now
             </span>
             <MdArrowOutward />
-            <span className="h-8 w-7 bg-transparent rotate-45 absolute top-11 left-49"></span>
+            <span className="h-10 w-5 bg-primary absolute top-0 right-[-20] "></span>
+            <span className="h-7 w-7 bg-primary rotate-45 absolute top-6.5 left-39"></span>
           </Button>
         </div>
       </div>
