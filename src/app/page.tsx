@@ -2,6 +2,7 @@
 import Page from '@/components/page/landing/Home'
 import About from '@/components/page/landing/Aboutus'
 import Fasthelp from '@/components/page/landing/fasthelp';
+import Servicescars from '@/components/page/landing/servicescars';
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Page/>
       <About/>
       <Fasthelp/>
+      <Servicescars/>
 
     </main>
   );}

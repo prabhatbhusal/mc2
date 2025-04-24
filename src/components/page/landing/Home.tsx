@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const Landingpage = () => {
   return (
-    <div className="h-[100vh] bg-blend-overlay flex flex-row justify-center items-center px-7 gap-2">
+    <div className="h-[100vh] bg-blend-overlay flex flex-row justify-center items-center   text-white z-10">
       <video
         autoPlay
         muted
@@ -14,13 +14,13 @@ const Landingpage = () => {
       >
         <source src="/video/video.mp4" type="video/mp4" />
       </video>
-      <div className="w-[80%] flex flex-col justify-center items-center gap-7 z-10 ">
+      <div className="w-[90%] flex flex-col justify-center items-center gap-2 relative right-[-10] z-10 ">
         <p className="text-lg text-white">POLK ROADSIDE ASSITANCE</p>
         <hr className="w-10 text-center text-white" />
-        <h1 className="font-bold text-[100px] text-center">
+        <h1 className="bg-gradient-to-b from-white to-gray-400 text-transparent bg-clip-text font-bold text-[92px]">
           24/7 Roadside Assistance
         </h1>
-        <h2 className="font-bold text-[100px] text-center bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
+        <h2 className="bg-gradient-to-b from-white to-neutral-800 text-transparent bg-clip-text font-bold text-[92px]">
           Anytime, Anywhere!
         </h2>
         <p>
@@ -44,7 +44,7 @@ const Landingpage = () => {
           </Button>
         </div>
       </div>
-      <div className="w-20% flex flex-col justify-center items-center gap-5">
+      <div className="w-10% flex flex-col justify-center items-center gap-5 z-10">
         <span className="rounded-full bg-neutral-500 px-5 py-3 ">
           <Image src="/icons/location.svg" alt="logo" height={8} width={20} />
         </span>

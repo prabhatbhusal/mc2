@@ -26,7 +26,7 @@ const fasthelp = () => {
           </h2>
 
           <p className="">Mon - Sun (12:00 AM -12:00 PM)</p>
-          <p className="w-150">
+          <p className="w-200">
             When you find yourself stranded on the side of the road in Killeen,
             TX the last thing you want to worry about is how to get help. That's
             where our reliable 24/7 roadside assistance service comes to the
