@@ -128,3 +128,41 @@ export const headersec=[{
   title:''
 
 },]
+export const reviewdata = [
+  {
+    id: 1,
+    title: "Rinny Kaligis",
+    rating: 5.0,
+    content:
+      "Polk Roadside Assistance Saved My Car—and My Wallet—by Covering Repairs and My Extended Rental After a Hit-and-Run!After my car was sideswiped in a hit-and-run on 01/10/25, I was devastated",
+  },
+  {
+    id: 2,
+    title: "Nasibullah Naziri",
+    rating: 5.0,
+    content:
+      "My vehicle was into an accident, I took my car to Polk Roadside Assistance and they fixed my car way better than what it was to the smallest detail I highly recommend this shop outstanding people with great work.",
+  },
+  {
+    id: 3,
+    title: "Douglas Boner",
+    rating: 5.0,
+    content:
+      "Great Body Shop, they worked with my insurance company after my accident and got my car back like brand new! Thank you Moe for the excellent service. True workmanship at Polk Roadside Assistances",
+  },
+  {
+    id: 4,
+    title: "Tyler Post",
+    rating: 5.0,
+    content:
+      "Does great work will go back for all body shop needs highly recommend",
+  },
+  {
+    id: 5,
+    title: "Rinny Kaligis",
+    rating: 5.0,
+    content:
+      "Polk Roadside Assistance Saved My Car—and My Wallet—by Covering Repairs and My Extended Rental After a Hit-and-Run!After my car was sideswiped in a hit-and-run on 01/10/25, I was devastated",
+  },
+  
+];
