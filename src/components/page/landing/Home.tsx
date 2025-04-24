@@ -45,7 +45,17 @@ const Landingpage = () => {
           </Button>
         </div>
       </div>
-      <Logobtn/>
+      <div className="w-10% flex flex-col justify-center items-center gap-5 z-10">
+        <span className="rounded-full bg-neutral-500 px-5 py-3 ">
+          <Image src="/icons/location.svg" alt="logo" height={8} width={20} />
+        </span>
+        <span className="rounded-full bg-neutral-500 px-5 py-4">
+          <Image src="/icons/mail.svg" alt="logo" height={8} width={20} />
+        </span>
+        <span className="rounded-full bg-neutral-500 px-5 py-3">
+          <Image src="/icons/phone.svg" alt="logo" height={8} width={20} />
+        </span>
+      </div>
     </div>
   );
 };
