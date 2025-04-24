@@ -4,7 +4,7 @@ import ServiceCard from '@/components/page/service/ServiceCard'
 
 const Service = () => {
   return (
-    <>
+    <div className='h-[90vh]'>
       <div className="h-[25vh] text-white font-medium px-28 pt-35 ">
         <div className=" ">
           <h2
@@ -19,9 +19,11 @@ const Service = () => {
             of an emergency.
           </p>
         </div>
+        <div>
+          <ServiceCard />
+        </div>
       </div>
-      <ServiceCard />
-    </>
+    </div>
   );
 }
 

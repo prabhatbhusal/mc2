@@ -1,5 +1,6 @@
 import React from "react";
 import { Star } from "lucide-react";
+import Link from "next/link";
 
 interface ClientReview {
     id: number;
@@ -14,7 +15,7 @@ interface ClientReviewCardProp {
 
 const ClientReviewCard: React.FC<ClientReviewCardProp> = ({ testimonial }) => {
     return (
-      <div className="flex flex-col gap-5 p-6 bg-black text-white rounded-lg border border-[#CCCCCC]">
+      <div className="flex flex-col gap-5 p-6 bg-[#292929] text-white rounded-lg ">
         <div className="flex items-start gap-[18px]">
           <div className="flex items-start gap-2">
             {testimonial.rating === 5.0 ? (
@@ -39,6 +40,7 @@ const ClientReviewCard: React.FC<ClientReviewCardProp> = ({ testimonial }) => {
         <p className="text-neutral-500  text-base line-clamp-4">
           {testimonial.content}
         </p>
+        <Link href='#'className='text-yellow-400 underline'>Read More</Link>
       </div>
     );
 };

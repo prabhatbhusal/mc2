@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { MdArrowOutward } from "react-icons/md"
 import { Button } from "@/components/ui/button";
-
+import Logobtn from '@/components/logobtn'
 const Landingpage = () => {
   return (
     <div className="h-[100vh] bg-blend-overlay flex flex-row justify-center items-center   text-white z-10">
@@ -45,17 +45,7 @@ const Landingpage = () => {
           </Button>
         </div>
       </div>
-      <div className="w-10% flex flex-col justify-center items-center gap-5 z-10">
-        <span className="rounded-full bg-neutral-500 px-5 py-3 ">
-          <Image src="/icons/location.svg" alt="logo" height={8} width={20} />
-        </span>
-        <span className="rounded-full bg-neutral-500 px-5 py-4">
-          <Image src="/icons/mail.svg" alt="logo" height={8} width={20} />
-        </span>
-        <span className="rounded-full bg-neutral-500 px-5 py-3">
-          <Image src="/icons/phone.svg" alt="logo" height={8} width={20} />
-        </span>
-      </div>
+      <Logobtn/>
     </div>
   );
 };

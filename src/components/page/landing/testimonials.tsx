@@ -64,7 +64,7 @@ const Testimonials = () => {
           <button
             onClick={prevSlide}
             disabled={currentIndex === 0}
-            className={`p-2 rounded-full bg-gray-800 text-white ${
+            className={`p-2 rounded-full bg-gray-800 text-white relative ${
               currentIndex === 0
                 ? "opacity-50 cursor-not-allowed"
                 : "hover:bg-gray-700"

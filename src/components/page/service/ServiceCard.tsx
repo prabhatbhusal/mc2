@@ -88,10 +88,10 @@ export default function Carousel() {
             {/* Content */}
             <div className="relative p-8 h-full flex flex-col justify-end">
               <h3
-                className={`text-4xl relative font-bold mb-6 transition-all-ease-in-out duration-500 ${
+                className={`text-4xl relative mb-6 transition-all-ease-in-out duration-500 ${
                   hoveredIndex === index
                     ? "text-white bottom-[30px]"
-                    : "text-white"
+                    : "text-white bottom-[-80px]"
                 }`}
               >
                 {service.title}
