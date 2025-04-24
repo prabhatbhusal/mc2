@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 import React from 'react'
 
 const Aboutus = () => {
@@ -23,11 +24,11 @@ const Aboutus = () => {
             size="lg"
             className="relative bg-primary text-md text-white items-center flex font-regular gap-2 p-1 sm:p-3 ml-1 sm:ml-2"
           >
-            <h6 className="hidden xs:inline sm:inline font-medium">
+            <Link href='#' className="hidden xs:inline sm:inline font-medium">
               Contact Now
-            </h6>
+            </Link>
             <span className="h-10 w-5 bg-primary absolute top-0 right-[-20] "></span>
-            <span className="h-7 w-7 bg-primary rotate-45 absolute top-6.5 left-31.5"></span>
+            <span className="h-7 w-7 bg-primary rotate-45 absolute top-6.5 left-27.5"></span>
           </Button>
         </div>
       </div>

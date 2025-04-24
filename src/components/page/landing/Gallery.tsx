@@ -1,7 +1,8 @@
 import GallerySlider from '@/components/GallerySlider';
 import { Button } from '@/components/ui/button';
 import React from 'react'
-
+import { images } from '@/lib/constants/data';
+import Link from 'next/link';
 const Gallery = () => {
   return (
     <main className="text-white font-medium">
@@ -11,10 +12,11 @@ const Gallery = () => {
           Our <span className="text-primary">Services</span> in Action
         </h2>
       </div>
-      <div className="h-40vh">
-        <GallerySlider />
+      <div className="container mx-auto py-8">
+
+        <GallerySlider images={images} />
       </div>
-      <div className='justify-center flex '>
+      <Link href='#' className="justify-center flex mt-5">
         <Button
           size="lg"
           className="relative bg-primary text-xl text-white items-center flex font-regular gap-2 px-[16px] sm:p-3 ml-1 sm:ml-2"
@@ -25,7 +27,7 @@ const Gallery = () => {
           <span className="h-10 w-5 bg-primary absolute top-0 right-[-20] "></span>
           <span className="h-7 w-5 bg-primary rotate-45 absolute top-7.25 left-33.75"></span>
         </Button>
-      </div>
+      </Link>
     </main>
   );
 }

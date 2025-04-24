@@ -7,6 +7,21 @@ const Footer = () => {
       className="overflow-x-hidden
 "
     >
+      <div >
+              <iframe
+                title="Google Maps - Polk Roadside Assistance Location"
+                width="100%"
+                height="503"
+
+
+
+                src="https://maps.google.com/maps?width=100%25&amp;height=503&amp;hl=en&amp;q=1802%20Standridge%20St,%20Killeen,%20TX%2076543,%20USA+(Polk%20Roadside%20Assistance)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              >
+                <a href="https://www.gps.ie/collections/personal-trackers/">
+                  real-time gps tracker,
+                </a>
+              </iframe>
+            </div>
       <div className="bg-[url(/images/bg.png)] bg-blend-multiply bg-neutral-500 text-white flex flex-col items-center gap-18 h-[500px] py-5 overflow-x-hidden ">
         <div className="h-[10%]">
           <div

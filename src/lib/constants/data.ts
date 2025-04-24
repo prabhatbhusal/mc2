@@ -164,5 +164,67 @@ export const reviewdata = [
     content:
       "Polk Roadside Assistance Saved My Car—and My Wallet—by Covering Repairs and My Extended Rental After a Hit-and-Run!After my car was sideswiped in a hit-and-run on 01/10/25, I was devastated",
   },
-  
+
+];
+interface ImageItem {
+  src: string;
+  alt?: string;
+}
+export const images: ImageItem[] = [
+  {
+    src: "/Gallery/image-1.png",
+    alt: "Image 1",
+  },
+  {
+    src: "/Gallery/image-2.png",
+    alt: "Image 2",
+  },
+  {
+    src: "/Gallery/image-3.png",
+    alt: "Image 3",
+  },
+  {
+    src: "/Gallery/image-4.png",
+    alt: "Image 4",
+  },
+  {
+    src: "/Gallery/image-6.png",
+    alt: "Image 5",
+  },
+  {
+    src: "/Gallery/image-15.png",
+    alt: "Image 6",
+  },
+  {
+    src: "/Gallery/image-8.png",
+    alt: "Image 7",
+  },
+  {
+    src: "/Gallery/image-9.png",
+    alt: "Image 1",
+  },
+  {
+    src: "/Gallery/image-10.png",
+    alt: "Image 2",
+  },
+  {
+    src: "/Gallery/image-11.png",
+    alt: "Image 3",
+  },
+  {
+    src: "/Gallery/image-12.png",
+    alt: "Image 4",
+  },
+  {
+    src: "/Gallery/image-13.png",
+    alt: "Image 5",
+  },
+  {
+    src: "/Gallery/image-5.png",
+    alt: "Image 6",
+  },
+  {
+    src: "/Gallery/image-15.png",
+    alt: "Image 7",
+  },
 ];
