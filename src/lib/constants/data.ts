@@ -124,3 +124,7 @@ export const Footerserve = [
 export const galleryimg=[{
   url:'/Gallery/image'
 }]
+export const headersec=[{
+  title:''
+
+},]

@@ -3,21 +3,21 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button';
 const contact = () => {
   return (
-    <div className=" flex justify-center items-center px-5 gap-10 font-medium ">
+    <div className=" flex  px-28   gap-20 font-semibold ">
       <div>
         <Image
           src="/images/brokencar.png"
           alt="contact"
           height={40}
           width={1000}
-          className="object-contain h-200 w-200"
+          className="object-contain h-[471px] w-[838px]"
         />
       </div>
 
-      <div className="text-white p-[50px] gap-20">
+      <div className="text-white">
         <div className="flex flex-col gap-2">
           <div>
-            <h3 className='text-base '>Contact Us</h3>
+            <h3 className="text-base ">Contact Us</h3>
           </div>
           <div>
             <h2 className=" text-white text-[44px] font-orbitron  hover:text-gray-300 transition duration-300">
@@ -55,9 +55,9 @@ const contact = () => {
           <div>
             <Button
               size="lg"
-              className="relative bg-primary text-xl text-white items-center flex font-regular gap-2 p-2 sm:p-3 ml-1 sm:ml-2"
+              className="relative bg-primary text-xl text-white items-center flex font-semibold gap-2 p-2 sm:p-3 ml-1 sm:ml-2"
             >
-              <h6 className="hidden xs:inline sm:inline font-regular text-lg">
+              <h6 className="hidden xs:inline sm:inline font-semibold text-lg">
                 Get Contact
               </h6>
               <span className="h-10 w-5 bg-primary absolute top-0 right-[-20] "></span>

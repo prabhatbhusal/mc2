@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 const fasthelp = () => {
   return (
     <div>
-      <div className="flex justify-center items-center gap-10 bg-black py-35">
+      <div className="flex px-28 gap-20 bg-black py-35">
         <div className="flex flex-col justify-center items-center">
           <Image
             src="/images/handtire.png"
@@ -15,7 +15,7 @@ const fasthelp = () => {
             className="object-cover h-[517px] w-[835px]"
           />
         </div>
-        <div className="flex flex-col justify-center font-medium text-white gap-3 relative ">
+        <div className="flex flex-col  font-medium text-white gap-3 relative ">
           <h6 className="text-lg text-white">Fast Help</h6>
           <h2 className="text-[50px] font-medium text-primary">
             24/7,
