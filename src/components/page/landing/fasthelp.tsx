@@ -15,16 +15,18 @@ const FastHelp = () => {
               fill
               className="object-cover rounded-lg"
               priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
 
-          {/* Tire mark on mobile appears below the main image */}
+          {/* Tire mark on mobile */}
           <div className="relative w-full h-40 md:h-64 lg:hidden overflow-hidden opacity-30">
             <Image
               src="/images/tiremark.png"
               alt="Tire mark"
               fill
               className="object-contain rotate-45"
+              sizes="(max-width: 1024px) 100vw, 30vw"
             />
           </div>
 
@@ -36,6 +38,7 @@ const FastHelp = () => {
                 alt="Tire mark"
                 fill
                 className="object-contain -translate-x-1/2"
+                sizes="30vw"
               />
             </div>
           </div>
@@ -63,7 +66,7 @@ const FastHelp = () => {
           <div className="mt-4">
             <Button
               size="lg"
-              className="relative bg-primary text-white items-center flex font-medium gap-2 p-2 sm:p-3"
+              className="relative bg-primary text-white items-center flex font-medium gap-2 p-2 sm:p-3 hover:bg-primary/90 transition-colors"
             >
               <h6 className="text-sm md:text-base">Request Virtual Estimate</h6>
               <span className="h-10 w-5 bg-primary absolute top-0 right-0 hidden md:block"></span>
@@ -79,6 +82,7 @@ const FastHelp = () => {
                 alt="Tire mark"
                 fill
                 className="object-contain -rotate-35"
+                sizes="15vw"
               />
             </div>
           </div>

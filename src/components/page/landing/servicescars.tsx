@@ -6,10 +6,10 @@ const servicescars = () => {
       <div className="py-10">
         <div className="flex flex-col justify-center text-center items-center gap-5 ">
           <h6 className="">Services</h6>
-          <h1 className="text-white text-[60px] font-bold">
+          <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold ">
             We Also Offer Reliable <br />{" "}
             <span className="text-primary ">Towing Services!</span>{" "}
-          </h1>
+          </h2>
           <p className="w-200">
             We understand that car breakdowns, flat tires, dead batteries, and
             accidents can happen at any time of the day or night, and
@@ -23,7 +23,7 @@ const servicescars = () => {
             alt="cars"
             width={3000}
             height={10}
-            className=" h-200 w-400 bg-center object-contain z-1"
+            className=" h-auto w-400 bg-center object-contain z-1 "
           />
         </div>
       </div>

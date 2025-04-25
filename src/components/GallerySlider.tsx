@@ -1,3 +1,4 @@
+
 // components/ImageSlider.tsx
 'use client'
 import { useState, useEffect, useRef } from "react";
@@ -16,16 +17,12 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images = [] }) => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Calculate visible indices with looping
   const getVisibleIndices = (): number[] => {
     const totalImages = images.length;
-    // We need 5-6 images for the exact style (with overflow)
     const indices: number[] = [];
 
-    // Show more images to create the overflow effect
     for (let i = -2; i <= 3; i++) {
       let index = (currentIndex + i) % totalImages;
-      // Handle negative indices for looping backward
       if (index < 0) index = totalImages + index;
       indices.push(index);
     }
@@ -37,37 +34,49 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images = [] }) => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
-  // Auto-play functionality
   useEffect(() => {
-    // Start autoplay immediately
     timerRef.current = setInterval(() => {
       nextSlide();
     }, 3000);
 
     return () => {
-      if (timerRef.current) {
-        clearInterval(timerRef.current);
-      }
+      if (timerRef.current) clearInterval(timerRef.current);
     };
   }, [currentIndex]);
 
   const visibleIndices = getVisibleIndices();
 
   return (
-    <div className="relative w-full  ">
-      {/* Overflow container that spans beyond screen width */}
-      <div className="w-screen overflow-visible">
+    <div className="relative w-full">
+      <div className="w-full md:w-screen overflow-visible">
         <div
-          className="flex items-center justify-center space-x-4"
-          style={{ width: "120vw", marginLeft: "-20vw" }}
+          className="flex items-center justify-center space-x-2 md:space-x-4"
+          style={{
+            width: "100%",
+            marginLeft: "0",
+            // Responsive width adjustments
+            ...(typeof window !== 'undefined' && window.innerWidth >= 768 ? {
+              width: "120vw",
+              marginLeft: "-20vw"
+            } : {})
+          }}
         >
           {visibleIndices.map((imageIndex, i) => {
-            const isCenter = i === 2; // Middle position
+            const isCenter = i === 2;
 
-            // Enhanced sizing for center image
-            let width = isCenter ? "w-96 md:w-128" : "w-70 md:w-74";
-            let height = isCenter ? "h-64 md:h-80" : "h-70 md:h-70";
-            let scale = isCenter ? "scale-125" : "scale-100";
+            // Responsive sizing
+            let width = isCenter
+              ? "w-48 sm:w-64 md:w-96 lg:w-128"
+              : "w-32 sm:w-40 md:w-56 lg:w-72";
+
+            let height = isCenter
+              ? "h-32 sm:h-48 md:h-64 lg:h-80"
+              : "h-24 sm:h-32 md:h-48 lg:h-64";
+
+            let scale = isCenter
+              ? "scale-105 md:scale-125"
+              : "scale-90 md:scale-100";
+
             let zIndex = isCenter ? "z-10" : "z-0";
             let opacity = isCenter ? "opacity-100" : "opacity-60";
 
@@ -81,15 +90,12 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images = [] }) => {
                 >
                   <Image
                     src={images[imageIndex].src}
-                    alt={
-                      images[imageIndex].alt ||
-                      `Auto Service Image ${imageIndex + 1}`
-                    }
+                    alt={images[imageIndex].alt || `Auto Service Image ${imageIndex + 1}`}
                     fill
                     className={`object-cover transition-transform duration-700 ${
-                      isCenter ? "scale-110" : ""
+                      isCenter ? "scale-100 md:scale-110" : ""
                     }`}
-                    sizes="(max-width: 768px) 100vw, 60vw"
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                   />
                 </div>
               </div>

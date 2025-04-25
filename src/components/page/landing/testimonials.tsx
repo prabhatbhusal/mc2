@@ -29,9 +29,9 @@ const Testimonials = () => {
 
   return (
     <main>
-      <div className="flex flex-col justify-center h-[20-vh] py-35 px-28 text-white">
+      <div className="flex flex-col justify-center h-[20-vh] py-30 px-28 text-white">
         <h6 className="text-md font-medium">Customers Reviews</h6>
-        <h2 className="text-[44px] font-medium">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium">
           See What our <span className="text-primary">Customers</span> are
           Saying
         </h2>
