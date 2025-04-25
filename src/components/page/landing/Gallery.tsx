@@ -20,11 +20,11 @@ const Gallery = () => {
           size="lg"
           className="relative bg-primary text-xl text-white items-center flex font-regular gap-2 px-[16px]  sm:p-3 ml-1 sm:ml-2"
         >
-          <h6 className="hidden xs:inline sm:inline font-medium text-[16px]">
+          <h6 className=" xs:inline sm:inline font-medium text-[16px]">
             View Gallery
           </h6>
-          <span className="lg:h-10 lg:w-5 sm:w-5 sm:h-10 bg-primary absolute top-0 right-[-20] "></span>
-          <span className="h-7 w-5 bg-secondary rotate-45 absolute top-7.25 left-auto lg:left-33.5"></span>
+          <span className="lg:h-10 lg:w-5 sm:w-5 sm:h-10 bg-primary absolute top-0 xs:hidden lg:right-[-20]"></span>
+          <span className="h-7 w-5 bg-primary rotate-45 absolute top-7.25 left-29.5  xs:hidden lg:left-33.5"></span>
         </Button>
       </Link>
     </main>
