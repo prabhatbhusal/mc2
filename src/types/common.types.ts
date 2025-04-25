@@ -1,10 +1,10 @@
-export type props=
-{
-  heading1:string,
-  heading2:string,
-  info:string,
-  service:string,
-}
+export type props = {
+  heading1: string;
+  heading2: string;
+  info: string;
+  service: string;
+  content: string;
+};
 interface ClientReview {
     id: number;
     rating: number;
