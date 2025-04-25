@@ -39,7 +39,7 @@ export default function Carousel() {
   };
 
   return (
-    <div className="relative w-full px-4 py-8">
+    <div className="relative w-full px-4 py-8 z-[10]">
       {/* Navigation Buttons */}
       <div className="absolute right-4 -top-20 z-10 flex gap-2">
         <button
