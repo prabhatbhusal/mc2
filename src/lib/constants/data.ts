@@ -121,13 +121,8 @@ export const Footerserve = [
     content: "Air Delivery Services",
   },
 ];
-export const galleryimg=[{
-  url:'/Gallery/image'
-}]
-export const headersec=[{
-  title:''
 
-},]
+
 export const reviewdata = [
   {
     id: 1,

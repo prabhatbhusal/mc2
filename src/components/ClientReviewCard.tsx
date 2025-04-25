@@ -1,17 +1,8 @@
 import React from "react";
 import { Star } from "lucide-react";
 import Link from "next/link";
+import { ClientReviewCardProp } from "@/types/common.types";
 
-interface ClientReview {
-    id: number;
-    rating: number;
-    title: string;
-    content: string;
-}
-
-interface ClientReviewCardProp {
-    testimonial: ClientReview;
-}
 
 const ClientReviewCard: React.FC<ClientReviewCardProp> = ({ testimonial }) => {
     return (
