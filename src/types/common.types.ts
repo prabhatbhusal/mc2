@@ -5,6 +5,9 @@ export type props = {
   service: string;
   content: string;
 };
+export interface prop{
+  prop:props
+}
 interface ClientReview {
     id: number;
     rating: number;

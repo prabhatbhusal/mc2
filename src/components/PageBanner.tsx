@@ -1,20 +1,20 @@
 import React from 'react'
 import { props } from '@/types/common.types'
 
-const PageBanner = (props:props) => {
+const PageBanner:React.FC<props> = (prop) => {
   return (
     <main>
       <div className="">
         <div>
           <p>24/7 Assistance</p>
           <hr />
-          <h1 className="">{props.heading1}</h1>
-          <h2 className="">{props.heading2}</h2>
-          <p>{props.info}</p>
+          <h1 className="">{prop.heading1}</h1>
+          <h2 className="">{prop.heading2}</h2>
+          <p>{prop.info}</p>
         </div>
         <div>
-          <h2>{props.service}</h2>
-          <p>{props.content}</p>
+          <h2>{prop.service}</h2>
+          <p>{prop.content}</p>
         </div>
         <div></div>
       </div>
