@@ -1,11 +1,11 @@
 import React from 'react'
 
-const TireChange = () => {
+const towing = () => {
   return (
     <div>
-
+      
     </div>
   )
 }
 
-export default TireChange
+export default towing

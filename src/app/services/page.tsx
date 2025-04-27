@@ -16,12 +16,13 @@ const page:React.FC<serviceprop> = () => {
    };
   return (
     <main>
+
       <PageBanner
-        heading1="Welcome to"
-        heading2="POLK ROADSIDE"
-        info="Stranded? Our expert team is always on call to get you back on track—quickly, safely, and hassle-free."
-        content="Whether it’s a flat tire, a dead battery, or you’re simply locked out, we’ve got your back—day or night. With Polk Roadside Assistance, help is just a call away. Stranded? Our expert team is always on call to get you back on track—quickly, safely, and hassle-free."
-        service="ALWAYS HERE, ALWAYS READY"
+        heading1="Tailored Service"
+        heading2="-A Call Away"
+        info="No matter the situation, our expert team is ready to assist"
+        content="From flat tires to dead batteries, our trained technicians are ready 24/7 to get you back on the road safely and quickly. We serve Killeen, Copperas Cove, Temple, and nearby areas with reliable and affordable roadside assistance."
+        service="Our Roadside Services"
       />
       <div className="flex lg:flex-col md:flex-row sm:flex-row  justify-center items-center gap-[39px]  text-white font-medium px-10">
         {services.map((link, idx) => (
@@ -51,7 +52,7 @@ const page:React.FC<serviceprop> = () => {
             )}
 
             <div className="flex flex-col  justify-center ">
-              <div className='flex flex-col gap-[24px] justify-center '>
+              <div className="flex flex-col gap-[24px] justify-center ">
                 <h2
                   className={`lg:text-[52px] sm:text-3xl md:text-4xl relative mb-2 sm:mb-4 md:mb-6 transition-all-ease-in-out duration-700 ${
                     hoveredIndex === idx
@@ -81,7 +82,7 @@ const page:React.FC<serviceprop> = () => {
                   } relative bg-primary text-sm sm:text-lg md:text-xl text-white items-center flex font-semibold gap-1 sm:gap-2 p-1 sm:p-2 md:p-3 ml-1 sm:ml-2`}
                   size="lg"
                 >
-                  <Link href="">
+                  <Link href={link.link}>
                     <h6 className="font-medium text-sm sm:text-base md:text-lg">
                       View More
                     </h6>

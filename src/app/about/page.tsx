@@ -5,11 +5,11 @@ const page = () => {
   return (
     <main>
       <PageBanner
-        heading1="Tailored Service"
-        heading2="-A Call Away"
-        info="No matter the situation, our expert team is ready to assist"
-        content="From flat tires to dead batteries, our trained technicians are ready 24/7 to get you back on the road safely and quickly. We serve Killeen, Copperas Cove, Temple, and nearby areas with reliable and affordable roadside assistance."
-        service="Our Roadside Services"
+        heading1="Welcome to"
+        heading2="POLK ROADSIDE"
+        info="Stranded? Our expert team is always on call to get you back on track—quickly, safely, and hassle-free."
+        content="Whether it’s a flat tire, a dead battery, or you’re simply locked out, we’ve got your back—day or night. With Polk Roadside Assistance, help is just a call away. Stranded? Our expert team is always on call to get you back on track—quickly, safely, and hassle-free."
+        service="ALWAYS HERE, ALWAYS READY"
       />
     </main>
   );

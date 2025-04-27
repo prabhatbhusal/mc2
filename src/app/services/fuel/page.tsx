@@ -1,11 +1,11 @@
 import React from 'react'
 
-const BatteryReplace = () => {
+const towing = () => {
   return (
     <div>
-
+      
     </div>
   )
 }
 
-export default BatteryReplace
+export default towing

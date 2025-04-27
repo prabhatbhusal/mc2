@@ -1,6 +1,6 @@
 import React from 'react'
 
-const heavyduty = () => {
+const towing = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const heavyduty = () => {
   )
 }
 
-export default heavyduty
+export default towing

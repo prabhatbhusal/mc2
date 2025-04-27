@@ -1,6 +1,6 @@
 import React from 'react'
 
-const roadside = () => {
+const towing = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const roadside = () => {
   )
 }
 
-export default roadside
+export default towing

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 const Contact = () => {
   return (
     <>
-      <div className="flex flex-col lg:flex-row px-4 sm:px-6 md:px-12 lg:px-28 gap-8 lg:gap-20 font-semibold">
+      <div className="flex flex-col lg:flex-row px-4 sm:px-6 md:px-12 lg:px-28 gap-8 lg:gap-20 lg:py-20 font-semibold">
         <div className="w-full lg:w-auto">
           <video
             autoPlay
