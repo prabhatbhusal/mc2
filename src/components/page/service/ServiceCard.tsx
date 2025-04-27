@@ -1,20 +1,8 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { useState, useRef } from "react";
+import {services} from '@/lib/constants/data'
 
-const services = [
-  { title: "Towing", url: "/Services/Towing.jpg" },
-  { title: "Fuel Delivery", url: "/Services/Fueldelivery.jpg" },
-  { title: "Lock Out Services", url: "/Services/lockout.jpg" },
-  { title: "Roadside Assistance", url: "/Services/roadside.jpg" },
-  { title: "JumpStart", url: "/Services/Jumpstart.jpg" },
-  { title: "Heavy Duty Jump", url: "/Services/Heavyduty.jpg" },
-  { title: "Tire Repair", url: "/Services/tirerepair.jpg" },
-  { title: "Tire Change", url: "/Services/tirechange.jpg" },
-  { title: "Mobile Battery Change", url: "/Services/mobile.jpg" },
-  { title: "Car Battery Replacement", url: "/Services/Batteryreplace.png" },
-  { title: "Air Delivery Service", url: "/Services/Towing.jpg" },
-];
 
 export default function Carousel() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);

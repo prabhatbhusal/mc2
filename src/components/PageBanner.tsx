@@ -1,22 +1,42 @@
 import React from 'react'
 import { props } from '@/types/common.types'
+import { Search } from 'lucide-react';
 
 const PageBanner:React.FC<props> = (prop) => {
   return (
     <main>
-      <div className="">
-        <div>
-          <p>24/7 Assistance</p>
-          <hr />
-          <h1 className="">{prop.heading1}</h1>
-          <h2 className="">{prop.heading2}</h2>
-          <p>{prop.info}</p>
+      <div className="text-white flex flex-col h-[120vh] items-center font-medium  gap-90 bg-[url(/images/car.png)]  bg-fill bg-center bg-no-repeat bg-blend-overlay bg-neutral-500">
+        <div className="flex flex-col items-center justify-center py-52 gap-[24px]">
+          <div className="flex flex-col items-center gap-[10px]">
+            <p>24/7 ASSISTANCE</p>
+            <hr className="w-15 text-center text-white" />
+          </div>
+
+          <h1 className="lg:text-[92px] md:text-4xl sm:text:3xl font-bold">
+            {prop.heading1}
+          </h1>
+          <h2 className=" text-primary lg:text-[92px] md:text-4xl sm:text:3xl font-bold">
+            {prop.heading2}
+          </h2>
+          <p className="font-light">{prop.info}</p>
         </div>
-        <div>
+        <div className="flex flex-col items-center justify-center  ">
           <h2>{prop.service}</h2>
-          <p>{prop.content}</p>
+          <p className="font-light">{prop.content}</p>
+          <div
+            className="absolute  max-w-md w-[406px] h-[44px] bottom-[-130px] left-[1402px] gap-[10px] p-[10px]
+"
+          >
+            <div className="absolute inset-y-0 left-2 flex items-center pl-3 pointer-events-none">
+              <Search className="text-gray-400 w-5 h-5 relative top-2" />
+            </div>
+            <input
+              type="text"
+              placeholder="Search..."
+              className="w-full p-10 py-2 border border-gray-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            />
+          </div>
         </div>
-        <div></div>
       </div>
     </main>
   );

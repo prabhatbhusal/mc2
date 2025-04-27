@@ -9,7 +9,7 @@ const Footer = () => {
       <Image
         alt="logo"
         src="/images/tire.png"
-        className="h-[400px] w-[445px] absolute top-1941 rotate-[195deg] left-[-110px] p-2 object-contain hidden md:block"
+        className="h-[350px] w-[500px] absolute mt-140 rotate-[195deg] left-[-110px] p-2 object-contain hidden md:block"
         height={50}
         width={500}
       />
