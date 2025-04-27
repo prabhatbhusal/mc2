@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { serviceprop } from '@/types/common.types';
 import Link from 'next/link';
 const page:React.FC<serviceprop> = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
    const handleTouchStart = (index: number) => {
      if (window.innerWidth < 768) {
@@ -26,7 +27,7 @@ const page:React.FC<serviceprop> = () => {
         {services.map((link, idx) => (
           <div
             key={idx}
-            className="flex w-full px-10 gap-10 bg-[#323232] rounded"
+            className="flex w-full px-[30px] gap-10 bg-[#323232] rounded-xl"
             onMouseEnter={() => setHoveredIndex(idx)}
             onMouseLeave={() => setHoveredIndex(null)}
             onTouchStart={() => handleTouchStart(idx)}
@@ -39,7 +40,7 @@ const page:React.FC<serviceprop> = () => {
                   alt="alt"
                   width={2000}
                   height={30}
-                  className={`relative inset-0 w-[830px] h-[223] object-cover filter transition duration-300 gap-[8px] rounded-lg pt-[24px] pr-[20px] pb-[16px] pl-[20px] ${
+                  className={`relative inset-0 w-[830px] h-[223px] object-cover  transition duration-300 gap-[8px] rounded-xl pt-[24px] pr-[20px] pb-[16px] pl-[20px] ${
                     hoveredIndex === idx ? "grayscale-0" : "grayscale"
                   }`}
                 />
@@ -50,25 +51,28 @@ const page:React.FC<serviceprop> = () => {
             )}
 
             <div className="flex flex-col  justify-center ">
-              <h2
-                className={`text-2xl sm:text-3xl md:text-4xl relative mb-2 sm:mb-4 md:mb-6 transition-all-ease-in-out duration-500 ${
-                  hoveredIndex === idx
-                    ? "text-white bottom-[-20px] sm:bottom-[10px]"
-                    : "text-white bottom-[-40px] sm:bottom-[-80px]"
-                }`}
-              >
-                {link.title}
-              </h2>
-              <p
-                className={`text-lg  relative mb-2 sm:mb-4 md:mb-6 transition-all-ease-in-out duration-500 ${
-                  hoveredIndex === idx
-                    ? "text-white bottom-[-20px] sm:bottom-[30px]"
-                    : "text-white bottom-[-40px] sm:bottom-[-80px]"
-                }`}
-              >
-                {link.info}
-              </p>
-              <div className='flex items-end justify-end'>
+              <div className='flex flex-col gap-[24px] justify-center '>
+                <h2
+                  className={`lg:text-[52px] sm:text-3xl md:text-4xl relative mb-2 sm:mb-4 md:mb-6 transition-all-ease-in-out duration-700 ${
+                    hoveredIndex === idx
+                      ? "text-white lg:bottom-[-20px] sm:bottom-[10px]"
+                      : "text-white lg:bottom-[-40px] sm:bottom-[-80px]"
+                  }`}
+                >
+                  {link.title}
+                </h2>
+                <p
+                  className={`text-lg  relative mb-2 sm:mb-4 md:mb-6 transition-all-ease-in-out duration-700 ${
+                    hoveredIndex === idx
+                      ? "text-white lg:bottom-[20px] sm:bottom-[30px]"
+                      : "text-white bottom-[-40px] sm:bottom-[-80px]"
+                  }`}
+                >
+                  {link.info}
+                </p>
+              </div>
+
+              <div className="flex items-end justify-end">
                 <Button
                   className={`absolute bottom-3 sm:bottom-5 transform transition-all duration-300 w-[120px] sm:w-[140px] md:w-[15vh] ${
                     hoveredIndex === idx
