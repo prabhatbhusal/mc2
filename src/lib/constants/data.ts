@@ -1,5 +1,5 @@
 import { NavItems } from "@/types/navbar.types";
-
+import { serviceprop } from "@/types/common.types";
 export const navItems: NavItems[] = [
   {
     id: 1,
@@ -224,60 +224,71 @@ export const images: ImageItem[] = [
   },
 ];
 
-export const services = [
+export const services: serviceprop[] = [
   {
     title: "Towing",
     url: "/Services/Towing.jpg",
     info: "Our towing service provides fast and reliable roadside assistance whenever you need it. ",
+    link: "",
   },
   {
     title: "Fuel Delivery",
     url: "/Services/Fueldelivery.jpg",
     info: "Our towing service provides fast and reliable roadside assistance whenever you need it. ",
+    link: "",
   },
   {
     title: "Lock Out Services",
     url: "/Services/lockout.jpg",
     info: "Our towing service provides fast and reliable roadside assistance whenever you need it. ",
+    link: "",
   },
   {
     title: "Roadside Assistance",
     url: "/Services/roadside.jpg",
     info: "Our towing service provides fast and reliable roadside assistance whenever you need it. ",
+    link: "",
   },
   {
     title: "JumpStart",
     url: "/Services/Jumpstart.jpg",
     info: "Our towing service provides fast and reliable roadside assistance whenever you need it. ",
+    link: "",
   },
   {
     title: "Heavy Duty Jump",
     url: "/Services/Heavyduty.jpg",
     info: "Our towing service provides fast and reliable roadside assistance whenever you need it. ",
+    link: "",
   },
   {
     title: "Tire Repair",
     url: "/Services/tirerepair.jpg",
     info: "Our towing service provides fast and reliable roadside assistance whenever you need it. ",
+    link: "",
   },
   {
     title: "Tire Change",
     url: "/Services/tirechange.jpg",
     info: "Our towing service provides fast and reliable roadside assistance whenever you need it. ",
+    link: "",
   },
   {
     title: "Mobile Battery Change",
     url: "/Services/mobile.jpg",
     info: "Our towing service provides fast and reliable roadside assistance whenever you need it. ",
+    link: "",
   },
   {
     title: "Car Battery Replacement",
     url: "/Services/Batteryreplace.png",
     info: "Our towing service provides fast and reliable roadside assistance whenever you need it. ",
+    link: "",
   },
   {
     title: "Air Delivery Service",
     url: "/Services/Towing.jpg",
     info: "Our towing service provides fast and reliable roadside assistance whenever you need it. ",
+    link: "",
   },
 ];

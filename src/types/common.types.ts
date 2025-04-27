@@ -18,3 +18,9 @@ interface ClientReview {
 export interface ClientReviewCardProp {
     testimonial: ClientReview;
 }
+export interface serviceprop{
+  title:string,
+   url:string ,
+   info:string,
+   link:string,
+}
