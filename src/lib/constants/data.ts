@@ -292,3 +292,21 @@ export const services: serviceprop[] = [
     link: "/services/airdelivery",
   },
 ];
+
+export const aboutdata = [
+  {
+    title: "MISSION",
+    content:
+      "Our Mission is Simple-To deliver fast, dependable, and top-quality roadside assistance services that get you back on the road safely. We strive to be the trusted first call for anyone facing a roadside emergency—providing quick, effective, and stress-free solutions anytime, anywhere.",
+  },
+  {
+    title: "VISION",
+    content:
+      "Our Vision-To become the most trusted roadside assistance provider by setting the standard for rapid response, exceptional service, and customer-first care. We envision a future where every driver feels safe and supported on the road, no matter the situation.",
+  },
+  {
+    title: "OUR TEAM",
+    content:
+      "Behind every service call is a dedicated team of trained and experienced professionals who know how to handle all types of roadside challenges. From tire changes to towing, our experts are equipped with modern tools, in-depth knowledge, and a genuine commitment to helping you when you need it most.",
+  },
+];
