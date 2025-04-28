@@ -1,0 +1,76 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+
+/* 2) Dark background gradient on slides */
+.slide-overlay {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+/* 3) Title style */
+.slide-title {
+  font-family: var(--carousel-font);
+  font-size: 1.125rem;
+  /* about 18px */
+  text-align: center;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* 4) Custom navigation buttons */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+  color: white;
+  top: 1rem;
+  right: auto;
+  left: auto;
+}
+
+.swiper-button-prev {
+  right: 5.5rem;
+  /* position “<” */
+}
+
+.swiper-button-next {
+  right: 2rem;
+  /* position “>” */
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 1.25rem;
+}
+html,body{
+  scroll-behavior: smooth;
+  background-color:#1E1E1E;
+  overflow-x:hidden;
+
+
+}
+h1,h2,h3,h4,h5,h6{
+  font-family:'Orbitron';
+}
+@theme {
+  --color-primary: var(--primary-color);
+  --color-secondary:var(--secondary-color);
+}
+
+:root {
+  --primary-color: #D23631;
+  --secondary-color:#8A9E41;
+}
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+}
