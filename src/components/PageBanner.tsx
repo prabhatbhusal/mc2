@@ -21,10 +21,14 @@ const PageBanner:React.FC<props> = (prop) => {
           <p className="font-light">{prop.info}</p>
         </div>
         <div className="flex flex-col items-center justify-center  ">
-          <h2>{prop.service}</h2>
+          <div className="lg:text-[60px] md:text-4xl sm:text:3xl flex gap-5">
+            <h2 className="text-white">{prop.service1}</h2>
+            <h2 className="text-primary">{prop.service2}</h2>
+          </div>
+
           <p className="font-light">{prop.content}</p>
           <div
-            className="absolute  max-w-md w-[406px] h-[44px] bottom-[-130px] left-[1402px] gap-[10px] p-[10px]
+            className="absolute  max-w-md w-[406px] h-[44px] bottom-[-170px] left-[1402px] gap-[10px] p-[10px]
 "
           >
             <div className="absolute inset-y-0 left-2 flex items-center pl-3 pointer-events-none">

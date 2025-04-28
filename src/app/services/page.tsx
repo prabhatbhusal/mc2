@@ -16,13 +16,13 @@ const page:React.FC<serviceprop> = () => {
    };
   return (
     <main>
-
       <PageBanner
         heading1="Tailored Service"
         heading2="-A Call Away"
         info="No matter the situation, our expert team is ready to assist"
         content="From flat tires to dead batteries, our trained technicians are ready 24/7 to get you back on the road safely and quickly. We serve Killeen, Copperas Cove, Temple, and nearby areas with reliable and affordable roadside assistance."
-        service="Our Roadside Services"
+        service1="Our Roadside "
+        service2="Services"
       />
       <div className="flex lg:flex-col md:flex-row sm:flex-row  justify-center items-center gap-[39px]  text-white font-medium px-10">
         {services.map((link, idx) => (

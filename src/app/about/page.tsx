@@ -10,7 +10,8 @@ const page = () => {
         heading2="POLK ROADSIDE"
         info="Stranded? Our expert team is always on call to get you back on track—quickly, safely, and hassle-free."
         content="Whether it’s a flat tire, a dead battery, or you’re simply locked out, we’ve got your back—day or night. With Polk Roadside Assistance, help is just a call away. Stranded? Our expert team is always on call to get you back on track—quickly, safely, and hassle-free."
-        service="ALWAYS HERE, ALWAYS READY"
+        service1="ALWAYS HERE, "
+        service2="ALWAYS READY"
       />
       <div className="flex flex-col text-white">
         <div className="bg-center bg-[url(/images/time.png)] h-[128.51vh] bg-cover flex flex-col px-[202px] py-40 gap-30">
