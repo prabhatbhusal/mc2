@@ -311,7 +311,3 @@ export const aboutdata = [
       "Behind every service call is a dedicated team of trained and experienced professionals who know how to handle all types of roadside challenges. From tire changes to towing, our experts are equipped with modern tools, in-depth knowledge, and a genuine commitment to helping you when you need it most.",
   },
 ];
-export const carprop=[{
-  redtext:'',
-  services:''
-}]

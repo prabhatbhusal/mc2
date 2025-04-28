@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
-import PageBanner from '@/components/PageBanner'
-import { aboutdata } from '@/lib/constants/data'
+import PageBanner from "@/components/AboutPageBanner";
+import { aboutdata } from "@/lib/constants/data";
 const page = () => {
   return (
     <main>
@@ -35,6 +35,6 @@ const page = () => {
       </div>
     </main>
   );
-}
+};
 
-export default page
+export default page;

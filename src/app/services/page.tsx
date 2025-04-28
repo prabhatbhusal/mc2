@@ -1,19 +1,19 @@
-'use client'
-import React, { useState } from 'react'
-import {services} from '@/lib/constants/data'
-import PageBanner from '@/components/PageBanner';
-import Image from 'next/image'
-import { Button } from '@/components/ui/button';
-import { serviceprop } from '@/types/common.types';
-import Link from 'next/link';
-const page:React.FC<serviceprop> = () => {
+"use client";
+import React, { useState } from "react";
+import { services } from "@/lib/constants/data";
+import PageBanner from "@/components/ServicesBanner";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { serviceprop } from "@/types/common.types";
+import Link from "next/link";
+const page: React.FC<serviceprop> = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-   const handleTouchStart = (index: number) => {
-     if (window.innerWidth < 768) {
-       setHoveredIndex(index);
-     }
-   };
+  const handleTouchStart = (index: number) => {
+    if (window.innerWidth < 768) {
+      setHoveredIndex(index);
+    }
+  };
   return (
     <main>
       <PageBanner
@@ -97,6 +97,6 @@ const page:React.FC<serviceprop> = () => {
       </div>
     </main>
   );
-}
+};
 
-export default page
+export default page;
