@@ -45,7 +45,7 @@ const Navbar = () => {
       <div className="flex items-center">
         <Button
           size="lg"
-          className="relative bg-primary text-xl text-white items-center flex font-regular gap-2 p-2 sm:p-3"
+          className="relative bg-primary text-xl text-white items-center flex font-regular gap-2 p-3 sm:p-3"
         >
           <MdOutlinePhone className="flex-shrink-0" />
           <span className="hidden md:inline font-light whitespace-nowrap overflow-hidden">
