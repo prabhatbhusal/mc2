@@ -118,8 +118,8 @@ const Page = () => {
                 <h6 className="font-semibold text-base md:text-lg">
                   Send Message
                 </h6>
-                <span className="h-10 w-5 bg-primary absolute top-0 right-0 hidden md:block"></span>
-                <span className="h-6 w-6 bg-primary rotate-45 absolute top-6 right-0 translate-x-3 hidden md:block"></span>
+                <span className="h-10 w-5 bg-primary absolute top-0 right-[-20px] hidden md:block"></span>
+                <span className="h-7 w-6 bg-primary rotate-45 absolute lg:top-7 lg:right-[-2px] translate-x-3 hidden md:block"></span>
               </Button>
             </div>
           </form>
