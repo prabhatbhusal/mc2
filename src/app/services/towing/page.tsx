@@ -1,6 +1,7 @@
 import PageBanner from "@/components/InnerServicesBanner";
 import Carsprop from "@/components/Carsprop";
 import React from "react";
+import Getback from "@/components/Getback";
 
 const towing = () => {
   return (
@@ -15,6 +16,9 @@ const towing = () => {
         price='$65'
       />
       <Carsprop  title="Towing" />
+      <div>
+        <Getback/>
+      </div>
     </div>
   );
 };
