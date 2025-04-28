@@ -32,7 +32,7 @@ const PageBanner: React.FC<innerpageprops> = (prop: innerpageprops) => {
           </div>
           <div className="mt-4">
             <Button
-              size="lg1"
+              size="lg"
               className="relative bg-primary text-white items-center flex font-semibold gap-2 md:gap-5 p-3 lg:p-4"
             >
               <h6 className="font-light text-sm md:text-base lg:text-lg">

@@ -1,5 +1,5 @@
 import { NavItems } from "@/types/navbar.types";
-import { serviceprop } from "@/types/common.types";
+
 export const navItems: NavItems[] = [
   {
     id: 1,
@@ -222,7 +222,7 @@ export const images: ImageItem[] = [
   },
 ];
 
-export const services: serviceprop[] = [
+export const services = [
   {
     title: "Towing",
     url: "/Services/Towing.jpg",

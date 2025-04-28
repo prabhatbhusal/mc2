@@ -4,9 +4,9 @@ import { services } from "@/lib/constants/data";
 import PageBanner from "@/components/ServicesBanner";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { serviceprop } from "@/types/common.types";
 import Link from "next/link";
-const page: React.FC<serviceprop> = () => {
+
+const Service = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const handleTouchStart = (index: number) => {
@@ -99,4 +99,4 @@ const page: React.FC<serviceprop> = () => {
   );
 };
 
-export default page;
+export default Service;

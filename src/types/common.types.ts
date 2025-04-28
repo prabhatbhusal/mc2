@@ -5,7 +5,7 @@ export type props = {
   service1: string;
   service2: string;
   content: string;
- 
+
 };
 export type innerpageprops = {
   price: string;
@@ -28,10 +28,4 @@ interface ClientReview {
 
 export interface ClientReviewCardProp {
     testimonial: ClientReview;
-}
-export interface serviceprop{
-  title:string,
-   url:string ,
-   info:string,
-   link:string,
 }

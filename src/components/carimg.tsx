@@ -4,9 +4,7 @@ const carimg = () => {
   return (
     <main>
       <div className='font-medium'>
-        <div>
-
-        </div>
+        
           <div className="flex justify-center">
                     <Image
                       src="/images/cars.png"
@@ -15,6 +13,7 @@ const carimg = () => {
                       height={10}
                       className=" h-auto w-400 bg-center object-contain z-1 "
                     />
+      </div>
       </div>
     </main>
   )
