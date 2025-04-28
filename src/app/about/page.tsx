@@ -14,24 +14,28 @@ const page = () => {
         service2="ALWAYS READY"
       />
       <div className="flex flex-col text-white">
-        <div className="bg-center bg-[url(/images/time.png)] h-[128.51vh] bg-cover flex flex-col px-[202px] py-40 gap-30">
+        <div className="bg-center bg-[url(/images/time.png)] min-h-screen md:h-[128.51vh] bg-cover flex flex-col px-4 sm:px-8 md:px-12 lg:px-[202px] py-10 md:py-20 lg:py-40 gap-8 md:gap-16 lg:gap-30">
           {aboutdata.map((about, index) => (
             <div
               key={about.id}
-              className={`flex ${index % 2 !== 0 ? "flex-row-reverse" : ""}`}
+              className={`flex flex-col ${
+                index % 2 !== 0 ? "md:flex-row-reverse" : "md:flex-row"
+              } relative`}
             >
-              <div className="flex flex-col justify-center items-center border-gray p-[50px] w-[956px] h-[270px] bg-white/25 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[0.5px] rounded-[10px] border border-white/20">
-                <h6 className="text-[24px]">{about.content}</h6>
+              <div className="flex flex-col justify-center items-center border-gray p-4 sm:p-6 md:p-8 lg:p-[50px] w-full md:w-4/5 lg:w-[956px] h-auto md:h-[270px] bg-white/25 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[0.5px] rounded-[10px] border border-white/20 z-10">
+                <h6 className="text-base sm:text-lg md:text-xl lg:text-[24px] text-center md:text-left">
+                  {about.content}
+                </h6>
               </div>
-              <div>
-                <h2 className="absolute mt-55 ml-[-120px]  text-primary lg:text-[92px] md:text-5xl sm:text-4xl font-bold">
+              <div className="self-center md:self-auto">
+                <h2 className="text-primary text-4xl md:text-5xl lg:text-[92px] font-bold md:absolute md:mt-55 md:ml-[-120px]">
                   {about.title}
                 </h2>
               </div>
             </div>
           ))}
         </div>
-        <div className="bg-cover bg-center bg-[url(/images/aboutcar.png)] h-[1238px]"></div>
+        <div className="bg-cover bg-center bg-[url(/images/aboutcar.png)] h-screen"></div>
       </div>
     </main>
   );

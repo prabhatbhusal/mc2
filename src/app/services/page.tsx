@@ -24,7 +24,7 @@ const page: React.FC<serviceprop> = () => {
         service1="Our Roadside "
         service2="Services"
       />
-      <div className="flex lg:flex-col md:flex-row sm:flex-row  justify-center items-center gap-[39px]  text-white font-medium px-10">
+      <div className="flex lg:flex-col md:flex-col sm:flex-col  justify-center items-center gap-[39px]  text-white font-medium px-10">
         {services.map((link, idx) => (
           <div
             key={idx}
@@ -56,8 +56,8 @@ const page: React.FC<serviceprop> = () => {
                 <h2
                   className={`lg:text-[52px] sm:text-3xl md:text-4xl relative mb-2 sm:mb-4 md:mb-6 transition-all-ease-in-out duration-700 ${
                     hoveredIndex === idx
-                      ? "text-white lg:bottom-[-20px] sm:bottom-[10px]"
-                      : "text-white lg:bottom-[-40px] sm:bottom-[-80px]"
+                      ? "text-white  lg:bottom-[-20px] sm:bottom-[10px]"
+                      : "text-white  lg:bottom-[-80px] sm:bottom-[-80px]"
                   }`}
                 >
                   {link.title}
@@ -65,8 +65,8 @@ const page: React.FC<serviceprop> = () => {
                 <p
                   className={`text-lg  relative mb-2 sm:mb-4 md:mb-6 transition-all-ease-in-out duration-700 ${
                     hoveredIndex === idx
-                      ? "text-white lg:bottom-[20px] sm:bottom-[30px]"
-                      : "text-white bottom-[-40px] sm:bottom-[-80px]"
+                      ? "text-white opacity-100 lg:bottom-[20px] sm:bottom-[30px]"
+                      : "text-white opacity-0  bottom-[-40px] sm:bottom-[-80px]"
                   }`}
                 >
                   {link.info}
