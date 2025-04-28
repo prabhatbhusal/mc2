@@ -26,8 +26,8 @@ const PageBanner: React.FC<props> = (prop) => {
             <h2 className="text-white">{prop.service1}</h2>
             <h2 className="text-primary">{prop.service2}</h2>
           </div>
-          <div className="w-full md:w-4/5 lg:w-[1122px] flex text-center">
-            <p className="font-light">{prop.content}</p>
+          <div className="w-full md:w-4/5 lg:w-[1122px] flex justify-center items-center text-center">
+            <p className="font-light text-center">{prop.content}</p>
           </div>
         </div>
       </div>
