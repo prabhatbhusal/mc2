@@ -8,14 +8,14 @@ const towing = () => {
     <div>
       <PageBanner
         heading1="Fast, Reliable"
-        heading2="Towing "
+        heading2="Air Delivery "
         service1="More Than Just a"
-        service2="Towing"
-        info="Need a tow? Whether you’ve broken down or been in an accident, our 24/7 towing service will get your vehicle safely where it needs to go—quick, reliable, and always ready to help."
-        content="Our towing service offers quick and reliable assistance, Whether your car broke down, won’t start, or you've been in an accident, our 24/7 towing service is here to help. We’ll quickly dispatch a reliable professional to safely transport your vehicle—anytime, anywhere—so you’re never left stranded."
-        price="$65"
+        service2="Air Delivery"
+        info="Low on air? Our experienced technicians are available 24/7 to deliver and refill your tires with the right air pressure, getting you back on the road in no time."
+        content="Our Air Delivery Service provides customers with fast and reliable transportation solutions. We offer a range of services, including ground and air transportation, to ensure that your goods arrive on time and in perfect condition. With our professional and experienced staff, you can rest assured that your items will be safely and securely delivered."
+        price="$100"
       />
-      <Carsprop title="Towing" />
+      <Carsprop title="Air Delivery" />
       <div>
         <Getback />
       </div>

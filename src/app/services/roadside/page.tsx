@@ -8,14 +8,14 @@ const towing = () => {
     <div>
       <PageBanner
         heading1="Fast, Reliable"
-        heading2="Towing "
+        heading2="Roadside Assistance "
         service1="More Than Just a"
-        service2="Towing"
-        info="Need a tow? Whether you’ve broken down or been in an accident, our 24/7 towing service will get your vehicle safely where it needs to go—quick, reliable, and always ready to help."
-        content="Our towing service offers quick and reliable assistance, Whether your car broke down, won’t start, or you've been in an accident, our 24/7 towing service is here to help. We’ll quickly dispatch a reliable professional to safely transport your vehicle—anytime, anywhere—so you’re never left stranded."
+        service2="Roadside Assistance"
+        info="Need roadside help? Whether it’s a flat tire, dead battery, lockout, or no fuel, our 24/7 roadside assistance will get you back on the road—quick, reliable, and always ready to help."
+        content="Whether its ar breakdowns, flat tires, dead batteries, we are there dor immediate help due to a car breakdown or roadside emergency? Don't worry; we've got you covered! Call now for fast and reliable roadside assistance services available 24/7."
         price="$65"
       />
-      <Carsprop title="Towing" />
+      <Carsprop title="Roadside Assistance" />
       <div>
         <Getback />
       </div>

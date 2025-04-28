@@ -8,14 +8,15 @@ const towing = () => {
     <div>
       <PageBanner
         heading1="Fast, Reliable"
-        heading2="Towing "
+        heading2="Jumpstart "
         service1="More Than Just a"
-        service2="Towing"
-        info="Need a tow? Whether you’ve broken down or been in an accident, our 24/7 towing service will get your vehicle safely where it needs to go—quick, reliable, and always ready to help."
-        content="Our towing service offers quick and reliable assistance, Whether your car broke down, won’t start, or you've been in an accident, our 24/7 towing service is here to help. We’ll quickly dispatch a reliable professional to safely transport your vehicle—anytime, anywhere—so you’re never left stranded."
-        price="$65"
+        service2="Jumpstart"
+        info="Need a jumpstart? Whether your battery is dead at home, work, or on the road, our 24/7 jumpstart service will get you powered up and back on your way—quick, reliable, and always ready to help."
+        content="Our jumpstart service offers quick and reliable help. Whether your battery is dead at home, work, or on the road, our 24/7 team is ready to assist. We’ll quickly dispatch a professional to jumpstart your vehicle—anytime, anywhere—so you’re never left stranded.
+Pricing for jump start & battery installation ranges from $65-$155 depending on vehicle type and scope of work required."
+        price="$65-$155"
       />
-      <Carsprop title="Towing" />
+      <Carsprop title="Jumpstart" />
       <div>
         <Getback />
       </div>

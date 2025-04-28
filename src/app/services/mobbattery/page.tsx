@@ -8,14 +8,14 @@ const towing = () => {
     <div>
       <PageBanner
         heading1="Fast, Reliable"
-        heading2="Towing "
+        heading2="Mobile Battery Change "
         service1="More Than Just a"
-        service2="Towing"
-        info="Need a tow? Whether you’ve broken down or been in an accident, our 24/7 towing service will get your vehicle safely where it needs to go—quick, reliable, and always ready to help."
-        content="Our towing service offers quick and reliable assistance, Whether your car broke down, won’t start, or you've been in an accident, our 24/7 towing service is here to help. We’ll quickly dispatch a reliable professional to safely transport your vehicle—anytime, anywhere—so you’re never left stranded."
-        price="$65"
+        service2="Mobile Battery Change"
+        info="Need a new battery? Our experienced technicians are available 24/7 to deliver and install a replacement battery on the spot, getting you back on the road in no time."
+        content="Whether you're at home, work, or on the go, our team is here to provide hassle-free battery installation and quick delivery right to your doorstep. Our pricing for mobile battery services are based on location, battery brand & battery reserve power. "
+        price="$188.99"
       />
-      <Carsprop title="Towing" />
+      <Carsprop title="Mobile Battery Change" />
       <div>
         <Getback />
       </div>
