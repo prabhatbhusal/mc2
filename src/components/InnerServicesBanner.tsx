@@ -1,6 +1,7 @@
 import React from "react";
 import { innerpageprops } from "@/types/common.types";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const PageBanner: React.FC<innerpageprops> = (prop: innerpageprops) => {
   return (
@@ -35,10 +36,12 @@ const PageBanner: React.FC<innerpageprops> = (prop: innerpageprops) => {
               size="lg"
               className="relative bg-primary text-white items-center flex font-semibold gap-2 md:gap-5 p-3 lg:p-4"
             >
-              <h6 className="font-light text-sm md:text-base lg:text-lg">
-                Starting Price <br />
-                {prop.price}
-              </h6>
+              <Link href='#'>
+                <h6 className="font-light text-sm md:text-base lg:text-lg">
+                  Starting Price <br />
+                  {prop.price}
+                </h6>
+              </Link>
             </Button>
           </div>
         </div>

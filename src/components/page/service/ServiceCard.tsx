@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { useState, useRef } from "react";
 import {services} from '@/lib/constants/data'
+import Link from "next/link";
 
 
 export default function Carousel() {
@@ -104,9 +105,12 @@ export default function Carousel() {
                 } relative bg-primary text-sm sm:text-lg md:text-xl text-white items-center flex font-semibold gap-1 sm:gap-2 p-1 sm:p-2 md:p-3 ml-1 sm:ml-2`}
                 size="lg"
               >
-                <h6 className="font-semibold text-sm sm:text-base md:text-lg">
-                  Read More
-                </h6>
+                <Link href={service.link}>
+                  {" "}
+                  <h6 className="font-semibold text-sm sm:text-base md:text-lg">
+                    Read More
+                  </h6>
+                </Link>
                 <span className="h-8 w-4 sm:h-10 sm:w-5 bg-primary absolute top-0 right-[-16px] sm:right-[-20px]"></span>
                 <span className="h-5 w-5 sm:h-7 sm:w-6 bg-primary rotate-45 absolute top-6 sm:top-7 left-32 sm:left-38"></span>
               </Button>
