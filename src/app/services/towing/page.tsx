@@ -12,12 +12,12 @@ const towing = () => {
         service1="More Than Just a"
         service2="Towing"
         info="Need a tow? Whether you’ve broken down or been in an accident, our 24/7 towing service will get your vehicle safely where it needs to go—quick, reliable, and always ready to help."
-        content="Our towing service offers quick and reliable assistance, Whether your car broke down, won’t start, or you've been in an accident, our 24/7 towing service is here to help. We’ll quickly dispatch a reliable professional to safely transport your vehicle—anytime, anywhere—so you’re never left stranded."
-        price='$65'
+        content="Polk Roadside Experts are reliable when it comes to towing services. Their offerings include both emergency and general vehicle towing. When you find yourself with a broken-down car, they have the expertise to help. Along with towing, they provide tire repair and jump-start solutions, making them a one-stop service for motorists in need. Their dedication to assisting drivers ensures that you’ll be back on the road in no time."
+        price="$65"
       />
-      <Carsprop  title="Towing" />
+      <Carsprop title="Towing" />
       <div>
-        <Getback/>
+        <Getback />
       </div>
     </div>
   );

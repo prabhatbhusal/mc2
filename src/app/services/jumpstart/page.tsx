@@ -12,8 +12,7 @@ const towing = () => {
         service1="More Than Just a"
         service2="Jumpstart"
         info="Need a jumpstart? Whether your battery is dead at home, work, or on the road, our 24/7 jumpstart service will get you powered up and back on your way—quick, reliable, and always ready to help."
-        content="Our jumpstart service offers quick and reliable help. Whether your battery is dead at home, work, or on the road, our 24/7 team is ready to assist. We’ll quickly dispatch a professional to jumpstart your vehicle—anytime, anywhere—so you’re never left stranded.
-Pricing for jump start & battery installation ranges from $65-$155 depending on vehicle type and scope of work required."
+        content="No one likes dealing with a dead battery, but with the jump start services of Polk Roadside Assistance, it's a quick fix. If you accidentally left your lights on, they can get your car running again. Their team provides reliable jump-start assistance, ensuring your car is operational swiftly. This essential service ensures peace of mind, helping you get back on the road with minimal stress."
         price="$65-$155"
       />
       <Carsprop title="Jumpstart" />

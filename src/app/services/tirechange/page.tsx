@@ -12,7 +12,7 @@ const towing = () => {
         service1="More Than Just a"
         service2="Tire Change"
         info="Stranded with a flat tire? Our experienced technicians are available 24/7 to provide quick and safe tire changes, getting you back on the road in no time."
-        content="Our tire change service offers quick and reliable assistance when you are stuck on the side of the road with a flat tire. Our experienced technicians will arrive promptly and have your spare tire installed in no time, so you can get back on the road safely. We use only the highest quality materials to ensure your tire change is done right the first time."
+        content="Polk Roadside Assistance specializes in prompt tire changes to keep your journey uninterrupted. If you have a flat tire, they provide efficient and reliable tire repair services, from plugging to replacing. Operating across numerous counties in Texas, their tire services ensure peace of mind for drivers. Their goal is to get you moving again quickly, making roadside emergencies feel manageable."
         price="$75"
       />
       <Carsprop title="Tire Change" />

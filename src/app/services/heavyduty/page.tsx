@@ -12,8 +12,7 @@ const towing = () => {
         service1="More Than Just a"
         service2="Heavy Jumpstart"
         info="Need a jumpstart? Our experienced technicians are available 24/7 to provide quick and safe heavy-duty jumpstarts, getting your truck, RV, or commercial vehicle back on the road in no time."
-        content="Our heavy-duty jumpstart service offers quick and reliable help. Whether you're dealing with a dead battery in a truck, RV, or commercial vehicle, our 24/7 team is ready to assist. We’ll quickly dispatch a professional to safely jumpstart your heavy-duty vehicle—anytime, anywhere—so you’re never left stranded.
-Our pricing starts at $135 for heavy-duty jumps."
+        content="For those times when a regular jump start isn't enough, Polk Roadside Experts offer Heavy Duty Jump Start services. This service is ideal for larger vehicles or stubborn batteries. They provide a rapid solution for vehicles with completely discharged batteries. Their expertise ensures drivers receive prompt and efficient service for battery-related issues. With presence across Texas, they bring peace of mind to drivers requiring extra assistance."
         price="$135"
       />
       <Carsprop title="Heavy Jumpstart" />

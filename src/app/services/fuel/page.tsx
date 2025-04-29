@@ -12,7 +12,7 @@ const towing = () => {
         service1="More Than Just a"
         service2="Fuel Delivery"
         info="Ran out of fuel? Our experienced technicians are available 24/7 to provide quick and safe tire changes, getting you back on the road in no time."
-        content="Our Fuel Delivery service provides the convenience of having fuel brought to your location if you are out of gas. With just one call, one of our experienced technicians can arrive with the necessary fuel to get you back on the road. Our service is available 24/7, so you can rely on us when you need us most."
+        content="Running out of fuel is inconvenient, but Polk Roadside Assistance is here to help. They provide quick fuel delivery directly to wherever you are. This allows you to get back on track without waiting long. As part of their comprehensive roadside services, fuel delivery ensures you are never stuck for too long. Their efficient and timely assistance helps you resume your journey with ease."
         price="$65"
       />
       <Carsprop title="Fuel Delivery" />
