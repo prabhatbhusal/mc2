@@ -3,7 +3,7 @@ name: Build and Deploy polkroadside to VPS
 on:
   push:
     branches:
-      - master
+      - main
 
 # Grant GITHUB_TOKEN permissions to push to GHCR
 permissions:
