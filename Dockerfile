@@ -39,4 +39,4 @@ HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
   CMD curl --fail http://localhost:7074/ || exit 1
 
 # Start the Next.js application on port 7071, binding to all interfaces.
-CMD ["next", "start", "-H", "0.0.0.0", "-p", "7074s"]
+CMD ["next", "start", "-H", "0.0.0.0", "-p", "7074"]
