@@ -36,12 +36,12 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 USER nextjs
 # Set environment variables
 ENV NODE_ENV=production
-ENV PORT=7072
+ENV PORT=7074
 ENV HOSTNAME=0.0.0.0
 # Expose the port your app runs on
-EXPOSE 7072
+EXPOSE 7074
 # Healthcheck to ensure the app is running properly
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-  CMD curl -f http://localhost:7072/ || exit 1
+  CMD curl -f http://localhost:7074/ || exit 1
 # Start the application
 CMD ["node", "server.js"]
