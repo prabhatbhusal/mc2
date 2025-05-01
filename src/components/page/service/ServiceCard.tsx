@@ -111,8 +111,8 @@ export default function Carousel() {
                     Read More
                   </h6>
                 </Link>
-                <span className="h-8 w-4 sm:h-10 sm:w-5 bg-primary absolute top-0 right-[-16px] sm:right-[-20px]"></span>
-                <span className="h-5 w-5 sm:h-7 sm:w-6 bg-primary rotate-45 absolute top-6 sm:top-7 left-32 sm:left-38"></span>
+                <span className="h-10 w-4 sm:h-10 sm:w-5 bg-primary absolute top-0 right-[-16px] sm:right-[-20px]"></span>
+                <span className="h-7 w-6 sm:h-7 sm:w-6 bg-primary rotate-45 absolute top-7 lg:top-7 left-26.75 lg:left-38"></span>
               </Button>
             </div>
           </div>

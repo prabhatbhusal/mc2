@@ -27,7 +27,7 @@ const Aboutus = () => {
               Contact Now
             </Link>
             <span className="h-10 w-5 bg-primary absolute top-0 right-[-20] "></span>
-            <span className="h-7 w-7 bg-primary rotate-45 absolute top-6.5 left-27.5 "></span>
+            <span className="lg:h-7 lg:w-7 h-6 w-6 bg-primary rotate-45 absolute lg:top-6.5 top-7.75  lg:left-27.5 left-25 "></span>
           </Button>
         </div>
       </div>

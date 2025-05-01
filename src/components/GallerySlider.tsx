@@ -66,11 +66,11 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images = [] }) => {
 
             // Responsive sizing
             let width = isCenter
-              ? "w-48 sm:w-64 md:w-96 lg:w-128"
-              : "w-32 sm:w-40 md:w-56 lg:w-72";
+              ? "w-70 sm:w-64 md:w-96 lg:w-128"
+              : "w-30 sm:w-40 md:w-56 lg:w-72";
 
             let height = isCenter
-              ? "h-32 sm:h-48 md:h-64 lg:h-80"
+              ? "h-50 sm:h-48 md:h-64 lg:h-80"
               : "h-24 sm:h-32 md:h-48 lg:h-64";
 
             let scale = isCenter

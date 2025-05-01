@@ -23,8 +23,8 @@ const Gallery = () => {
           <h6 className=" xs:inline sm:inline font-medium text-[16px]">
             View Gallery
           </h6>
-          <span className="lg:h-10 lg:w-5 sm:w-5 sm:h-10 bg-primary absolute top-0 xs:hidden lg:right-[-20]"></span>
-          <span className="h-7 w-5 bg-primary rotate-45 absolute top-7.25 left-29.5  xs:hidden lg:left-33.5"></span>
+          <span className="lg:h-10 lg:w-5 sm:w-5 sm:h-10 bg-primary absolute top-0  lg:right-[-20]"></span>
+          <span className="h-7 w-5 bg-primary rotate-45 absolute top-7.25 left-29.5   lg:left-33.5"></span>
         </Button>
       </Link>
     </main>
