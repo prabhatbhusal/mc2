@@ -24,11 +24,11 @@ const Service = () => {
         service1="Our Roadside "
         service2="Services"
       />
-      <div className="flex flex-col md:flex-col sm:flex-col  justify-center items-center gap-[39px]  text-white font-medium px-10">
+      <div className="flex lg:flex-col md:flex-col flex-col  justify-center items-center gap-[39px]  text-white font-medium px-10">
         {services.map((link, idx) => (
           <div
             key={idx}
-            className="flex w-full px-[30px] gap-10 bg-[#323232] rounded-xl"
+            className="flex flex-col w-full px-[30px] gap-10 bg-[#323232] rounded-xl"
             onMouseEnter={() => setHoveredIndex(idx)}
             onMouseLeave={() => setHoveredIndex(null)}
             onTouchStart={() => handleTouchStart(idx)}
@@ -41,7 +41,7 @@ const Service = () => {
                   alt="alt"
                   width={2000}
                   height={30}
-                  className={`relative inset-0 w-[830px] h-[223px] object-cover  transition duration-300 gap-[8px] rounded-xl pt-[24px] pr-[20px] pb-[16px] pl-[20px] ${
+                  className={`relative inset-0 lg:w-[830px] lg:h-[223px] object-cover  transition duration-300 gap-[8px] rounded-xl pt-[24px] pr-[20px] pb-[16px] pl-[20px] ${
                     hoveredIndex === idx ? "grayscale-0" : "grayscale"
                   }`}
                 />
@@ -87,8 +87,8 @@ const Service = () => {
                       View More
                     </h6>
                   </Link>
-                  <span className="h-8 w-4 sm:h-10 sm:w-5 bg-primary absolute top-0 right-[-16px] sm:right-[-20px]"></span>
-                  <span className="h-5 w-5 sm:h-7 sm:w-6 bg-primary rotate-45 absolute top-6 sm:top-7 left-32 sm:left-38"></span>
+                  <span className="lg:h-8 lg:w-4 h-10 w-5 bg-primary absolute top-0 right-[-16px] sm:right-[-20px]"></span>
+                  <span className="lg:h-5 lg:w-5 h-7 w-5.75 bg-primary rotate-45 absolute lg:top-6.5 top-7 lg:left-32 left-27"></span>
                 </Button>
               </div>
             </div>
