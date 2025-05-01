@@ -15,7 +15,7 @@ const towing = () => {
         content="Getting locked out of your car can be frustrating. Polk Roadside Assistance ensures a smooth resolution to such situations. Their lockout services are swift, making sure you regain access without hassle. They aim to resolve the issue without needing to tow the vehicle, adding convenience for drivers. This efficient service means that getting back into your car is easier than ever, letting you continue your day smoothly."
         price="$65"
       />
-      <Carsprop title="Lock Out Service" />
+      <Carsprop title="Lock Out Service" img="/images/lockout.png" />
       <div>
         <Getback />
       </div>

@@ -15,7 +15,7 @@ const towing = () => {
         content="When a tire issue arises, Polk Roadside Experts are ready to help. They offer comprehensive tire repair services across Texas, including flat tire repair and replacement. With their mobile tire repair solutions, drivers receive efficient help right on the roadside. Whether it’s a quick air delivery or replacing a flat tire, Polk Roadside Experts ensure you're back on the road without unnecessary delays."
         price="$75"
       />
-      <Carsprop title="Tire Repair" />
+      <Carsprop title="Tire Repair" img="/images/Imagecar.png" />
       <div>
         <Getback />
       </div>

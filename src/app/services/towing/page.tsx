@@ -15,7 +15,7 @@ const towing = () => {
         content="Polk Roadside Experts are reliable when it comes to towing services. Their offerings include both emergency and general vehicle towing. When you find yourself with a broken-down car, they have the expertise to help. Along with towing, they provide tire repair and jump-start solutions, making them a one-stop service for motorists in need. Their dedication to assisting drivers ensures that you’ll be back on the road in no time."
         price="$65"
       />
-      <Carsprop title="Towing" />
+      <Carsprop title="Towing" img="/images/Imagecar.png" />
       <div>
         <Getback />
       </div>

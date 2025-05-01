@@ -15,7 +15,7 @@ const towing = () => {
         content="With Polk Roadside Experts, you get comprehensive roadside assistance to tackle any vehicle issue. Whether it's a flat tire, a dead battery, or getting locked out, their team is ready. They provide reliable mobile battery services, allowing you to quickly resume your journey. Fuel delivery is another essential service they offer, ensuring you never stay stranded for long. Their roadside services are tailored to keep drivers moving with minimal delay."
         price="$65"
       />
-      <Carsprop title="Roadside Assistance" />
+      <Carsprop title="Roadside Assistance" img="/images/Imagecar.png" />
       <div>
         <Getback />
       </div>

@@ -15,7 +15,7 @@ const towing = () => {
         content="Polk Roadside Assistance features a responsive Car Battery Replacement service to address battery malfunctions. If your battery fails, their skilled technicians will assist with prompt solutions. Equipped with necessary tools for roadside service, they minimize disruptions to your travel plans. This crucial service ensures that drivers receive timely help, enabling them to get back on the road quickly. "
         price="$65"
       />
-      <Carsprop title="Car Battery Replacement" />
+      <Carsprop title="Car Battery Replacement" img="/images/Imagecar.png" />
       <div>
         <Getback />
       </div>

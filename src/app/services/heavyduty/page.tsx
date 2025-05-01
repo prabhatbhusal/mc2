@@ -15,7 +15,7 @@ const towing = () => {
         content="For those times when a regular jump start isn't enough, Polk Roadside Experts offer Heavy Duty Jump Start services. This service is ideal for larger vehicles or stubborn batteries. They provide a rapid solution for vehicles with completely discharged batteries. Their expertise ensures drivers receive prompt and efficient service for battery-related issues. With presence across Texas, they bring peace of mind to drivers requiring extra assistance."
         price="$135"
       />
-      <Carsprop title="Heavy Jumpstart" />
+      <Carsprop title="Heavy Jumpstart" img="/images/Imagecar.png" />
       <div>
         <Getback />
       </div>

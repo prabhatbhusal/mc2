@@ -15,7 +15,7 @@ const towing = () => {
         content="No one likes dealing with a dead battery, but with the jump start services of Polk Roadside Assistance, it's a quick fix. If you accidentally left your lights on, they can get your car running again. Their team provides reliable jump-start assistance, ensuring your car is operational swiftly. This essential service ensures peace of mind, helping you get back on the road with minimal stress."
         price="$65-$155"
       />
-      <Carsprop title="Jumpstart" />
+      <Carsprop title="Jumpstart" img="/images/Imagecar.png" />
       <div>
         <Getback />
       </div>

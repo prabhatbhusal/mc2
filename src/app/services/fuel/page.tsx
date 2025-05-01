@@ -15,7 +15,7 @@ const towing = () => {
         content="Running out of fuel is inconvenient, but Polk Roadside Assistance is here to help. They provide quick fuel delivery directly to wherever you are. This allows you to get back on track without waiting long. As part of their comprehensive roadside services, fuel delivery ensures you are never stuck for too long. Their efficient and timely assistance helps you resume your journey with ease."
         price="$65"
       />
-      <Carsprop title="Fuel Delivery" />
+      <Carsprop title="Fuel Delivery" img="/images/fuel.png" />
       <div>
         <Getback />
       </div>

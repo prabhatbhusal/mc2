@@ -15,7 +15,7 @@ const towing = () => {
         content="Polk Roadside Assistance specializes in prompt tire changes to keep your journey uninterrupted. If you have a flat tire, they provide efficient and reliable tire repair services, from plugging to replacing. Operating across numerous counties in Texas, their tire services ensure peace of mind for drivers. Their goal is to get you moving again quickly, making roadside emergencies feel manageable."
         price="$75"
       />
-      <Carsprop title="Tire Change" />
+      <Carsprop title="Tire Change" img="/images/Imagecar.png" />
       <div>
         <Getback />
       </div>

@@ -4,6 +4,7 @@ interface prop{
 
 
   title:string,
+  img:string,
 
 }
 const servicescars = (props:prop) => {
@@ -16,7 +17,7 @@ const servicescars = (props:prop) => {
           </h6>
           <h2 className="text-primary text-3xl md:text-4xl lg:text-5xl font-bold ">
             {props.title}
-            
+
           </h2>
           <p className="w-200">
             At Polk Roadside Assistance, we prioritize customer satisfaction
@@ -25,7 +26,7 @@ const servicescars = (props:prop) => {
         </div>
         <div className="flex justify-center">
           <Image
-            src="/images/Imagecar.png"
+            src={props.img}
             alt="cars"
             width={3000}
             height={10}

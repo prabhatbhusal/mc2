@@ -1,17 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
-interface  img{
-  img:string
-}
 
-const carimg = ({img}:img) => {
+const carimg = () => {
   return (
     <main>
       <div className='font-medium'>
 
           <div className="flex justify-center">
                     <Image
-                      src={img}
+                      src="/images/cars.png"
                       alt="cars"
                       width={3000}
                       height={10}

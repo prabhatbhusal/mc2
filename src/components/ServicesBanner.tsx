@@ -21,7 +21,7 @@ const PageBanner:React.FC<props> = (prop) => {
           <p className="font-light w-auto">{prop.info}</p>
         </div>
         <div className="flex flex-col items-center justify-center  gap-5 ">
-          <div className="lg:text-[60px] md:text-4xl sm:text-3xl flex flex-wrap text-center gap-5">
+          <div className="lg:text-[60px] md:text-4xl sm:text-3xl flex flex-wrap justify-center text-center gap-5">
             <h2 className="text-white lg:text-[92px] md:text-[50px] text-[50px] ">
               {prop.service1}
             </h2>
@@ -29,12 +29,12 @@ const PageBanner:React.FC<props> = (prop) => {
               {prop.service2}
             </h2>
           </div>
-          <div className="lg:w-[1122px] w-150  flex flex-wrap text-center">
-            <p className="font-light lg:w-[1122px] w-100 ">{prop.content}</p>
+          <div className="lg:w-[1122px] w-125  flex flex-wrap text-center">
+            <p className="font-light lg:w-[1122px] w-125 flex  text-center  ">{prop.content}</p>
           </div>
 
           <div
-            className="absolute  max-w-md w-[406px] h-[44px] bottom-[-200px] lg:left-[1402px] gap-[10px] p-[10px] sm:left[140px]
+            className="absolute sm:mt-5  max-w-md w-[406px] h-[44px] bottom-[-200px] lg:left-[1402px] gap-[10px] p-[10px] sm:left[140px]
 "
           >
             <div className="absolute inset-y-0 left-2 flex items-center  pl-3 pointer-events-none ">

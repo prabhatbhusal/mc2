@@ -15,7 +15,7 @@ const towing = () => {
         content="Tire issues are no match for Polk Roadside Experts and their Air Delivery Service. It provides on-site tire inflation to quickly solve flat tire incidents. Part of their comprehensive roadside assistance, this service aims to reduce your downtime efficiently. Available alongside other amenities, the Air Delivery Service ensures you receive timely support, helping your journey continue without a hitch."
         price="$100"
       />
-      <Carsprop title="Air Delivery" />
+      <Carsprop title="Air Delivery" img="/images/airdelivery.png" />
       <div>
         <Getback />
       </div>
