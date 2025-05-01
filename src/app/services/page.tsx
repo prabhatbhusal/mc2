@@ -24,7 +24,7 @@ const Service = () => {
         service1="Our Roadside "
         service2="Services"
       />
-      <div className="flex lg:flex-col md:flex-col sm:flex-col  justify-center items-center gap-[39px]  text-white font-medium px-10">
+      <div className="flex flex-col md:flex-col sm:flex-col  justify-center items-center gap-[39px]  text-white font-medium px-10">
         {services.map((link, idx) => (
           <div
             key={idx}
@@ -51,7 +51,7 @@ const Service = () => {
               <div className="absolute inset-0 w-full h-full bg-gray-100" />
             )}
 
-            <div className="flex flex-col  justify-center ">
+            <div className="flex lg:flex-col sm:flex-col md:flex-col justify-center ">
               <div className="flex flex-col gap-[24px] justify-center ">
                 <h2
                   className={`lg:text-[52px] sm:text-3xl md:text-4xl relative mb-2 sm:mb-4 md:mb-6 transition-all-ease-in-out duration-700 ${

@@ -10,7 +10,7 @@ const Service = () => {
         alt="cars"
         width={3000}
         height={10}
-        className=" h-[650.1620432780828px] absolute w-[600px] bg-center ml-[-11vw] top-350 object-contain z-[1]"
+        className=" h-[650.1620432780828px] absolute w-[600px] bg-center ml-[-11vw] top-350 object-contain z-[-1]"
       />
       <div className="h-[25vh] text-white font-medium px-28 pt-35 z-[100]">
         <div className=" ">
