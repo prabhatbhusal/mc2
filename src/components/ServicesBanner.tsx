@@ -5,8 +5,8 @@ import { Search } from 'lucide-react';
 const PageBanner:React.FC<props> = (prop) => {
   return (
     <main>
-      <div className="text-white flex flex-col h-[125vh] items-center font-medium gap-45 lg:gap-90 bg-[url(/images/car.png)]  bg-fill bg-center bg-no-repeat bg-blend-overlay bg-neutral-500 ">
-        <div className="flex flex-col items-center justify-center py-52 gap-[24px]">
+      <div className="text-white flex flex-col h-[125vh] items-center font-medium  lg:gap-90 md:gap-45 gap-30  bg-[url(/images/car.png)]  bg-fill bg-center bg-no-repeat bg-blend-overlay bg-neutral-500 ">
+        <div className="flex flex-col items-center justify-center lg:py-52   gap-[24px]">
           <div className="flex flex-col items-center gap-[10px]">
             <p className="">24/7 ASSISTANCE</p>
             <hr className="w-15 text-center text-white" />
@@ -34,7 +34,7 @@ const PageBanner:React.FC<props> = (prop) => {
           </div>
 
           <div
-            className="absolute sm:mt-5  max-w-md w-[406px] h-[44px] bottom-[-200px] lg:left-[1402px] gap-[10px] p-[10px] sm:left[140px]
+            className="absolute sm:mt-5  mt-5 max-w-md w-[406px] h-[44px] bottom-[-200px] lg:left-[1402px] gap-[10px] p-[10px] sm:left[140px]
 "
           >
             <div className="absolute inset-y-0 left-2 flex items-center  pl-3 pointer-events-none ">

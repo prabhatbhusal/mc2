@@ -37,9 +37,9 @@ export default function Carousel() {
   };
 
   return (
-    <div className="relative w-full px-2 sm:px-4 py-4 sm:py-8 z-[10]">
+    <div className="relative w-full  sm:px-4 py-4 sm:py-8 z-[10]">
       {/* Navigation Buttons */}
-      <div className="absolute right-2 sm:right-4 -top-12 sm:-top-20 z-10 flex gap-1 sm:gap-2">
+      <div className="absolute right-2 sm:right-4 top-12 sm:-top-20 z-10 flex gap-1 sm:gap-2">
         <button
           onClick={scrollPrev}
           className="flex h-8 w-8 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-white/80 shadow-lg backdrop-blur transition-all hover:bg-white/100"
@@ -57,12 +57,12 @@ export default function Carousel() {
       {/* Carousel Items */}
       <div
         ref={scrollContainerRef}
-        className="flex h-auto sm:h-[500px] md:h-[600px] lg:h-[700px] overflow-x-auto scrollbar-hide pb-4 scroll-smooth"
+        className="flex h-[400px]  sm:h-[500px] md:h-[600px] lg:w-full lg:h-[700px] overflow-x-auto scrollbar-hide pb-4 scroll-smooth"
       >
         {services.map((service, index) => (
           <div
             key={index}
-            className="relative mx-2 sm:mx-4 h-[300px] sm:h-[350px] md:h-[400px] lg:h-[432px] w-[280px] sm:w-[350px] md:w-[399px] flex-shrink-0 rounded overflow-hidden"
+            className="relative mx-2 sm:mx-4  h-[300px] w-[50vw] sm:h-[350px] md:h-[450px] lg:h-[500px]  sm:w-[350px] md:w-[399px] flex-shrink-0 rounded overflow-hidden"
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
             onTouchStart={() => handleTouchStart(index)}
@@ -74,7 +74,7 @@ export default function Carousel() {
               <img
                 src={service.url}
                 alt={service.title}
-                className={`absolute inset-0 w-full h-full object-cover filter transition duration-300 ${
+                className={`absolute inset-0 lg:w-full md:w-full sm:w-[20vw] w-[50vw]  h-full  object-cover filter transition duration-300 ${
                   hoveredIndex === index ? "grayscale-0" : "grayscale"
                 }`}
               />

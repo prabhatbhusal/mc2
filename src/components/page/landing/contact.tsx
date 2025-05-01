@@ -130,8 +130,8 @@ const Contact = () => {
               <h6 className="font-semibold text-base md:text-lg">
                 Get Contact
               </h6>
-              <span className="h-10 w-5 bg-primary absolute top-0 lg:right-0 right-[-20px]"></span>
-              <span className="h-7 w-6 bg-primary rotate-45 absolute top-7 lg:right-4 right-[-13px]"></span>
+              <span className="h-10 w-5 bg-primary absolute top-0 lg:right-[-20px] right-[-20px]"></span>
+              <span className="h-7 w-6 bg-primary rotate-45 absolute top-7 lg:right-[-15px] right-[-13px] sm:right-[-13px]"></span>
             </Button>
           </div>
         </form>

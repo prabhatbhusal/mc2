@@ -28,7 +28,7 @@ const Service = () => {
         {services.map((link, idx) => (
           <div
             key={idx}
-            className="flex flex-col w-full px-[30px] gap-10 bg-[#323232] rounded-xl"
+            className="flex flex-col lg:flex-row w-full px-[30px] gap-10 bg-[#323232] rounded-xl"
             onMouseEnter={() => setHoveredIndex(idx)}
             onMouseLeave={() => setHoveredIndex(null)}
             onTouchStart={() => handleTouchStart(idx)}
@@ -51,10 +51,10 @@ const Service = () => {
               <div className="absolute inset-0 w-full h-full bg-gray-100" />
             )}
 
-            <div className="flex lg:flex-col sm:flex-col md:flex-col justify-center ">
+            <div className="flex flex-col lg:flex-col flex-wrap sm:flex-col  lg:w-[50vw] md:flex-col justify-center ">
               <div className="flex flex-col gap-[24px] justify-center ">
                 <h2
-                  className={`lg:text-[52px] sm:text-3xl md:text-4xl relative mb-2 sm:mb-4 md:mb-6 transition-all-ease-in-out duration-700 ${
+                  className={`lg:text-[52px] sm:text-3xl  md:text-4xl relative mb-2 sm:mb-4 md:mb-6 transition-all-ease-in-out duration-700 ${
                     hoveredIndex === idx
                       ? "text-white  lg:bottom-[-20px] sm:bottom-[10px]"
                       : "text-white  lg:bottom-[-80px] sm:bottom-[-80px]"
@@ -63,7 +63,7 @@ const Service = () => {
                   {link.title}
                 </h2>
                 <p
-                  className={`text-lg  relative mb-2 sm:mb-4 md:mb-6 transition-all-ease-in-out duration-700 ${
+                  className={`text-lg  relative mb-2 w-[150px] lg:w-full md:w-fu ll sm:mb-4 md:mb-6 transition-all-ease-in-out duration-700 ${
                     hoveredIndex === idx
                       ? "text-white opacity-100 lg:bottom-[20px] sm:bottom-[30px]"
                       : "text-white opacity-0  bottom-[-40px] sm:bottom-[-80px]"
@@ -87,8 +87,8 @@ const Service = () => {
                       View More
                     </h6>
                   </Link>
-                  <span className="lg:h-8 lg:w-4 h-10 w-5 bg-primary absolute top-0 right-[-16px] sm:right-[-20px]"></span>
-                  <span className="lg:h-5 lg:w-5 h-7 w-5.75 bg-primary rotate-45 absolute lg:top-6.5 top-7 lg:left-32 left-27"></span>
+                  <span className="lg:h-10 lg:w-4 h-10 w-5 bg-primary absolute top-0 lg:right-[-16px] right-[-16px]  sm:right-[-20px]"></span>
+                  <span className="lg:h-7 lg:w-5.75 h-7 w-5.75 bg-primary rotate-45 absolute lg:top-7 top-7 lg:left-37 left-27"></span>
                 </Button>
               </div>
             </div>

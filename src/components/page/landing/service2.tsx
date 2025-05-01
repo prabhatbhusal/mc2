@@ -12,11 +12,11 @@ const service2 = () => {
               size="lg"
               className="relative bg-secondary text-xl text-white top-0 items-center flex font-semibold gap-2 p-2 sm:p-3 ml-1 sm:ml-2 w-[13vh]"
             >
-              <h6 className=" xs:inline sm:inline font-semibold text-lg">
+              <h6 className=" xs:inline sm:inline font-semibold lg:text-lg text-[15px]">
                 Get Contact
               </h6>
               <span className="h-10 w-5 bg-secondary absolute top-0 right-[-20]"></span>
-              <span className="h-7 w-6 bg-secondary rotate-45 absolute top-7 lg:left-32.5 left-29.5"></span>
+              <span className="h-7 w-6 bg-secondary rotate-45 absolute top-7 left-20 sm:left-29.5  lg:left-32.5 "></span>
             </Button>
           </div>
         </div>
@@ -27,13 +27,13 @@ const service2 = () => {
           </h2>
           <Button
             size="lg"
-            className="relative bg-secondary text-xl text-white items-center flex font-semibold gap-2 p-2 sm:p-3 ml-1 sm:ml-2 w-[13vh]"
+            className="relative bg-secondary text-xl text-white items-center flex font-semibold gap-2 p-3 sm:p-3 ml-1 sm:ml-2 w-[13vh]"
           >
-            <h6 className="xs:inline sm:inline font-semibold text-lg ">
+            <h6 className="xs:inline sm:inline font-semibold lg:text-lg text-[15px] ">
               Get Contact
             </h6>
             <span className="h-10 w-5 bg-secondary absolute top-0 right-[-20]"></span>
-            <span className="h-7 w-6 bg-secondary rotate-45 absolute top-7 left-29.5 lg:left-32.5 "></span>
+            <span className="h-7 w-6 bg-secondary rotate-45 absolute top-7 left-20 sm:left-29.5  lg:left-32.5 "></span>
           </Button>
         </div>
       </div>
