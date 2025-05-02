@@ -2,6 +2,7 @@ import React from "react";
 
 import PageBanner from "@/components/AboutPageBanner";
 import { aboutdata } from "@/lib/constants/data";
+import Image from 'next/image'
 const page = () => {
   return (
     <main>
@@ -35,7 +36,15 @@ const page = () => {
             </div>
           ))}
         </div>
-        <div className="bg-cover bg-center bg-[url(/images/aboutcar.png)] h-screen"></div>
+        <div className="flex justify-center">
+                            <Image
+                              src="/images/aboutcar.png"
+                              alt="cars"
+                              width={3000}
+                              height={10}
+                              className=" h-auto w-screen mx-auto bg-center object-contain z-1 "
+                            />
+              </div>
       </div>
     </main>
   );

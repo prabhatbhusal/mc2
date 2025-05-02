@@ -12,7 +12,7 @@ const carimg = () => {
                       alt="cars"
                       width={3000}
                       height={10}
-                      className=" h-auto w-400 bg-center object-contain z-1 "
+                      className=" h-auto w-screen mx-auto bg-center object-contain z-1 "
                     />
       </div>
       </div>
