@@ -12,7 +12,7 @@ const Service = () => {
         height={10}
         className=" h-[650.1620432780828px] absolute w-[600px] bg-center ml-[-11vw] top-350 object-contain z-[-1]"
       />
-      <div className="h-[25vh] text-white font-medium px-28 lg:pt-35 z-[100]">
+      <div className="h-[25vh] text-white font-medium container lg:pt-35 z-[100]">
         <div className=" ">
           <h2
             className="lg:text-[52px] md:text-4xl sm:text-3xl text-2xl  font-bold
