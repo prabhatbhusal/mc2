@@ -4,7 +4,7 @@ import { Footerareas, Footercontact, Footerserve } from "@/lib/constants/data";
 
 const Footer = () => {
   return (
-    <div className="overflow-x-hidden overflow-y-hidden ">
+    <div className=" ">
       {/* Top Tire Image */}
       <Image
         alt="logo"
@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Content */}
-      <div className="bg-[url(/images/bg.png)] bg-blend-multiply text-white flex flex-col items-center gap-18 h-[500px] py-5 overflow-x-hidden">
+      <div className="bg-[url(/images/bg.png)] bg-blend-multiply text-white flex flex-col items-center gap-18 py-5 ">
         {/* Logo */}
         <div className="h-[10%]">
           <div className="bg-[#575757CC] h-[89px] rounded-xl px-2">
