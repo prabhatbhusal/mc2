@@ -6,7 +6,7 @@ import Link from 'next/link';
 const Gallery = () => {
   return (
     <main className="text-white font-medium">
-      <div className="flex flex-col justify-center h-auto lg:py-35 py-10 sm:py-20 md:py-30  container">
+      <div className="flex flex-col justify-center h-auto lg:py-35 py-10 sm:py-20 md:py-30  px-5">
         <h6 className="text-md font-medium">Gallery</h6>
         <h2 className="text-3xl md:text-4xl lg:text-5xl">
           Our <span className="text-primary">Services</span> in Action

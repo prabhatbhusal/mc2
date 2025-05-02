@@ -37,7 +37,7 @@ const Testimonials = () => {
   return (
     <main>
       {/* Fixed height typo from 20-vh to 20vh */}
-      <div className="flex flex-col justify-center h-[20vh] py-30 px-28 text-white">
+      <div className="flex flex-col justify-center h-[20vh] py-30 lg:px-28 md:px-28 sm:px-20 px-5 text-white">
         <h6 className="text-md font-medium">Customers Reviews</h6>
         <h2 className="sm:text-3xl text-2xl md:text-4xl lg:text-5xl font-medium">
           See What our <span className="text-primary">Customers</span> are

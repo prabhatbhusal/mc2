@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
 
         {/* Grid Sections */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-60 px-4 md:px-0">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-60 md:gap-30 gap-10 px-4 md:px-0">
           {/* Contact Section */}
           <div className="flex flex-col gap-5 text-center md:text-left">
             <div>

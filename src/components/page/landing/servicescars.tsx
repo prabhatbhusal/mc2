@@ -10,7 +10,7 @@ const servicescars = () => {
             We Also Offer Reliable <br />{" "}
             <span className="text-primary ">Towing Services!</span>{" "}
           </h2>
-          <p className="w-200">
+          <p className="max-w-200 mx-auto">
             We understand that car breakdowns, flat tires, dead batteries, and
             accidents can happen at any time of the day or night, and
             that&apos;s why we are committed to providing round-the-clock
