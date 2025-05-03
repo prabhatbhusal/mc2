@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Service = () => {
   return (
-    <div className="h-[90vh] ">
+    <div className="md:h-[90vh] h-[45vh] ">
       <Image
         src="/images/halftire.png"
         alt="cars"

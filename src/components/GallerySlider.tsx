@@ -66,8 +66,8 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images = [] }) => {
 
             // Responsive sizing
             let width = isCenter
-              ? "lg:w-100 w-100 md:w-96 lg:w-128"
-              : "w-30 sm:w-40 md:w-56 lg:w-72";
+              ? " w-150 md:w-96 lg:w-128"
+              : "w-20 sm:w-40 md:w-56 lg:w-72";
 
             let height = isCenter
               ? "h-50 sm:h-48 md:h-64 lg:h-80"
@@ -92,10 +92,10 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images = [] }) => {
                     src={images[imageIndex].src}
                     alt={images[imageIndex].alt || `Auto Service Image ${imageIndex + 1}`}
                     fill
-                    className={`object-cover transition-transform duration-700 ${
+                    className={`object-cover transition-transform duration-700 ease-in-out ${
                       isCenter ? "scale-100 md:scale-110" : ""
                     }`}
-                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                    sizes="(max-width: 640px) 70vw, (max-width: 1024px) 33vw, 25vw"
                   />
                 </div>
               </div>

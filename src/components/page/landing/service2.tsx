@@ -16,7 +16,7 @@ const service2 = () => {
                 Get Contact
               </h6>
               <span className="h-10 w-5 bg-secondary absolute top-0 right-[-20]"></span>
-              <span className="h-7 w-6 bg-secondary rotate-45 absolute top-7 left-20 sm:left-29.5  lg:left-32.5 "></span>
+              <span className="h-7 w-6 bg-secondary rotate-45 absolute top-7 left-25 sm:left-29.5  lg:left-32.5 "></span>
             </Button>
           </div>
         </div>
@@ -33,7 +33,7 @@ const service2 = () => {
               Get Contact
             </h6>
             <span className="h-10 w-5 bg-secondary absolute top-0 right-[-20]"></span>
-            <span className="h-7 w-6 bg-secondary rotate-45 absolute top-7 left-20 sm:left-29.5  lg:left-32.5 "></span>
+            <span className="h-7 w-6 bg-secondary rotate-45 absolute top-7 left-25 sm:left-29.5  md:left-32.5 "></span>
           </Button>
         </div>
       </div>

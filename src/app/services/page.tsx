@@ -65,7 +65,7 @@ const Service = () => {
               </div>
               <div>
               <p
-                className={`text-lg  relative mb-2 w-[150px] lg:w-full md:w-fu ll sm:mb-4 md:mb-6 transition-all-ease-in-out duration-700 ${
+                className={`text-lg  relative mb-2 w-full lg:w-full md:w-full sm:mb-4 md:mb-6 transition-all-ease-in-out duration-700 ${
                   hoveredIndex === idx
                     ? "text-white opacity-100 block  lg:bottom-[10px] sm:bottom-[30px]"
                     : "text-white opacity-0 hidden bottom-[-40px] sm:bottom-[-80px]"
