@@ -1,15 +1,17 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+.container {
+  max-width: 1620px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
 /* 2) Dark background gradient on slides */
 .slide-overlay {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.8) 100%);
 }
 
-.container{
-  padding:0 auto
-}
 /* 3) Title style */
 .slide-title {
   font-family: var(--carousel-font);
@@ -46,28 +48,56 @@
 .swiper-button-next::after {
   font-size: 1.25rem;
 }
-html,body{
+
+html,
+body {
   scroll-behavior: smooth;
-  background-color:#1E1E1E;
-  overflow-x:hidden;
+  background-color: #1E1E1E;
+  overflow-x: hidden;
 
 
 }
-h1,h2,h3,h4,h5,h6{
-  font-family:'Orbitron';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Orbitron';
 }
+
+p {
+  @apply text-base md:text-lg font-carroisGothicSC
+}
+
+button, a {
+  @apply font-orbitron
+}
+
 @theme {
   --color-primary: var(--primary-color);
-  --color-secondary:var(--secondary-color);
+  --color-secondary: var(--secondary-color);
+
+  /* font */
+  --font-orbitron: var(--font-orbitron);
+  --font-carroisGothicSC: var(--font-carroisGothicSC);
 }
 
 :root {
   --primary-color: #D23631;
-  --secondary-color:#8A9E41;
+  --secondary-color: #8A9E41;
 }
+
 @layer utilities {
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
+  }
+
+  /* button clippath */
+  .clip-custom {
+    /* clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0 100%); */
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 90% 100%, 0 100%);
   }
 
   .scrollbar-hide {
@@ -75,5 +105,31 @@ h1,h2,h3,h4,h5,h6{
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
+  }
+
+  /* Padding Utilities */
+  .p__t {
+    @apply pt-10 sm:pt-16 md:pt-20;
+  }
+
+  .p__b {
+    @apply pb-10 sm:pb-16 md:pb-20;
+  }
+
+  .p__tb {
+    @apply py-10 sm:py-16 md:py-20;
+  }
+
+  /* Padding Utilities */
+  .m__t {
+    @apply mt-10 sm:mt-16 md:mt-20;
+  }
+
+  .m__b {
+    @apply mb-10 sm:mb-16 md:mb-20;
+  }
+
+  .m__tb {
+    @apply my-10 sm:my-16 md:my-20;
   }
 }

@@ -2,15 +2,15 @@ import React from 'react'
 import Image from 'next/image'
 const servicescars = () => {
   return (
-    <main className="text-white font-medium bg-black">
-      <div className="py-10">
-        <div className="flex flex-col justify-center text-center items-center gap-5 ">
-          <h6 className="">Services</h6>
-          <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold ">
+    <section className="bg-[#07070A] p__tb">
+      <div className="container">
+        <div className="max-w-[800px] mx-auto text-center">
+          <h6 className='text-white'>Services</h6>
+          <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold my-5">
             We Also Offer Reliable <br />{" "}
             <span className="text-primary ">Towing Services!</span>{" "}
           </h2>
-          <p className="max-w-200 mx-auto">
+          <p className="text-[#E0E0E0]">
             We understand that car breakdowns, flat tires, dead batteries, and
             accidents can happen at any time of the day or night, and
             that&apos;s why we are committed to providing round-the-clock
@@ -27,7 +27,7 @@ const servicescars = () => {
           />
         </div>
       </div>
-    </main>
+    </section>
   );
 }
 

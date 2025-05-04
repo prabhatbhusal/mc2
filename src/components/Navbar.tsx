@@ -36,99 +36,98 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav
-      className={`flex justify-between items-center px-4 sm:px-8 md:px-[90px]  w-full fixed z-[100] ${
-        scrolled
-          ? "bg-[#575757CC] transition-colors duration-300"
-          : "bg-transparent"
-      }`}
-    >
-      {/* Logo */}
-      <div className="bg-[#575757CC] h-[50px] sm:h-[65px] md:h-[89px] rounded-xl px-2 flex items-center">
-        <Link href='/'>
-          <Image
-            alt="logo"
-            src="/images/logo.png"
-            className="h-[38px] sm:h-[50px] md:h-[69px] w-auto max-w-[100px] sm:max-w-[140px] md:max-w-[245px] p-1 sm:p-2 object-contain bg-transparent rounded-xl"
-            height={89}
-            width={245}
-          />
-        </Link>
-      </div>
-
-      {/* Desktop Nav */}
-      <div className="hidden md:flex items-center text-white gap-[20px] lg:gap-[40px] py-[8px] lg:py-[12px] px-[14px] lg:px-[28px] rounded-full font-medium bg-[#575757bb]">
-        {navItems.map((link) => (
-          <Link
-            key={link.id}
-            href={link.url}
-            className="flex items-center gap-2 relative whitespace-nowrap"
-          >
-            {pathname === link.url && (
-              <span className="text-white text-[8px]">●</span>
-            )}
-            {link.title}
-          </Link>
-        ))}
-      </div>
-
-      {/* Phone Button and Hamburger */}
-      <div className="flex items-center">
-        <Button
-          size="lg"
-          className="relative bg-primary md:visible hidden  text-xl text-white items-center md:flex font-regular gap-2 p-3 sm:p-3"
+    <header className={`fixed w-full z-[100] py-2 ${scrolled
+      ? "bg-[#575757CC] transition-colors duration-300"
+      : "bg-transparent"
+      }`}>
+      <div className="container">
+        <nav
+          className="flex justify-between items-center gap-5"
         >
-          <MdOutlinePhone className="flex-shrink-0" />
-          <span className="hidden md:inline font-light whitespace-nowrap overflow-hidden">
-            (254) 393-6078
-          </span>
-          <span className="hidden md:block h-10 w-5 bg-primary absolute top-0 right-[-20px]"></span>
-          <span className="hidden md:block h-7 w-7 bg-primary rotate-45 absolute top-[26px] right-[-14px]"></span>
-        </Button>
+          {/* Logo */}
+          <div className={`${!scrolled && "bg-[#575757CC] px-4"} rounded-xl flex items-center`}>
+            <Link href='/'>
+              <Image
+                alt="logo"
+                src="/images/logo.png"
+                className="w-[120px] min-w-[120px] sm:w-[155px] h-[60px] lg:w-[217px] lg:h-[72px] md:w-[180px] p-1 sm:p-2 object-contain bg-transparent rounded-xl"
+                height={72}
+                width={217}
+              />
+            </Link>
+          </div>
 
-        {/* Hamburger for Mobile */}
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden right-5  text-primary fixed focus:outline-none z-[1300]"
-          aria-label="Toggle menu"
-        >
-          {menuOpen ? <HiX size={58} /> : <HiMenu size={58} />}
-        </button>
-      </div>
-
-      {/* Mobile Nav Dropdown */}
-      {menuOpen && (
-        <div className="md:hidden fixed top-0 left-0 w-full h-screen bg-[#575757ee] flex flex-col items-center justify-center gap-8 z-[120] transition-all">
-          {navItems.map((link) => (
-            <div key={link.id}>
+          {/* Desktop Nav */}
+          <div className={`hidden md:flex items-center text-white gap-[20px] lg:gap-[40px] py-[8px] lg:py-[12px] px-[14px] lg:px-[28px] rounded-full font-medium ${!scrolled && "bg-[#575757bb]"}`}>
+            {navItems.map((link) => (
               <Link
+                key={link.id}
                 href={link.url}
-                className="flex items-center gap-2 text-white text-xl font-medium"
-                onClick={() => setMenuOpen(false)}
+                className="flex items-center gap-2 relative whitespace-nowrap"
               >
                 {pathname === link.url && (
                   <span className="text-white text-[8px]">●</span>
                 )}
                 {link.title}
               </Link>
-            </div>
-          ))}
-          <Link href="/">
+            ))}
+          </div>
+
+          {/* Phone Button and Hamburger */}
+          <div className="flex items-center gap-5">
             <Button
-              size="lg"
-              className="relative bg-primary text-xl text-white items-center  w-[40vw] flex font-regular gap-2 p-5 sm:p-3"
+              variant="clip_primary"
             >
-              <MdOutlinePhone className="flex" />
-              <span className=" md:inline text-sm font-light whitespace-nowrap overflow-hidden">
-                (254) 393-60
-              </span>
-              <span className="hidden md:block h-10 w-5 bg-primary absolute top-0 right-[-20px]"></span>
-              <span className="hidden md:block h-7 w-7 bg-primary rotate-45 absolute top-[26px] right-[-14px]"></span>
+              <Link href="tel:+2543936078" className="flex items-center gap-2 text-white">
+                <MdOutlinePhone className="flex-shrink-0" />
+                <span className="hidden sm:inline font-light whitespace-nowrap overflow-hidden">
+                  (254) 393-6078
+                </span>
+              </Link>
             </Button>
-          </Link>
-        </div>
-      )}
-    </nav>
+
+            {/* Hamburger for Mobile */}
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="md:hidden  text-primary focus:outline-none z-[1300] bg-[#575757ee]/60 p-2 rounded-md cursor-pointer"
+              aria-label="Toggle menu"
+            >
+              {menuOpen ? <HiX size={36} /> : <HiMenu size={36} />}
+            </button>
+          </div>
+
+          {/* Mobile Nav Dropdown */}
+          {menuOpen && (
+            <div className="md:hidden fixed top-0 left-0 w-full h-screen bg-[#575757ee] flex flex-col items-center justify-center gap-8 z-[120] transition-all">
+              {navItems.map((link) => (
+                <div key={link.id}>
+                  <Link
+                    href={link.url}
+                    className="flex items-center gap-2 text-white text-xl font-medium"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {pathname === link.url && (
+                      <span className="text-white text-[8px]">●</span>
+                    )}
+                    {link.title}
+                  </Link>
+                </div>
+              ))}
+              <Button
+                variant="clip_primary"
+              >
+                <Link href="tel:+2543936078" className="flex items-center gap-2 text-white">
+                  <MdOutlinePhone className="flex-shrink-0" />
+                  <span className="hidden md:inline font-light whitespace-nowrap overflow-hidden">
+                    (254) 393-6078
+                  </span>
+                </Link>
+              </Button>
+            </div>
+          )}
+        </nav>
+      </div>
+    </header>
   );
 };
 

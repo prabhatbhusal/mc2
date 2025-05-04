@@ -35,9 +35,9 @@ const Testimonials = () => {
     setCurrentIndex((prev) => Math.min(maxIndex, prev + 1));
 
   return (
-    <main>
+    <section className="container">
       {/* Fixed height typo from 20-vh to 20vh */}
-      <div className="flex flex-col justify-center h-[20vh] py-30 lg:px-28 md:px-28 sm:px-20 px-5 text-white">
+      <div className="flex flex-col justify-center mb-5 text-white">
         <h6 className="text-md font-medium">Customers Reviews</h6>
         <h2 className="sm:text-3xl text-2xl md:text-4xl lg:text-5xl font-medium">
           See What our <span className="text-primary">Customers</span> are
@@ -45,7 +45,7 @@ const Testimonials = () => {
         </h2>
       </div>
 
-      <div className="relative px-4 md:px-8 lg:px-12">
+      <div className="relative">
         <div className="overflow-hidden">
           <div
             className="flex transition-transform duration-300 ease-in-out"
@@ -65,15 +65,14 @@ const Testimonials = () => {
         </div>
 
         {/* Navigation remains the same */}
-        <div className="flex justify-between mt-6">
+        <div className="flex justify-center gap-5 mt-6">
           <button
             onClick={prevSlide}
             disabled={currentIndex === 0}
-            className={`p-2 rounded-full bg-gray-800 text-white ${
-              currentIndex === 0
+            className={`p-2 rounded-full bg-gray-800 text-white cursor-pointer ${currentIndex === 0
                 ? "opacity-50 cursor-not-allowed"
                 : "hover:bg-gray-700"
-            }`}
+              }`}
           >
             <ChevronLeft size={24} />
           </button>
@@ -81,17 +80,16 @@ const Testimonials = () => {
           <button
             onClick={nextSlide}
             disabled={currentIndex >= maxIndex}
-            className={`p-2 rounded-full bg-gray-800 text-white ${
-              currentIndex >= maxIndex
+            className={`p-2 rounded-full bg-gray-800 text-white cursor-pointer ${currentIndex >= maxIndex
                 ? "opacity-50 cursor-not-allowed"
                 : "hover:bg-gray-700"
-            }`}
+              }`}
           >
             <ChevronRight size={24} />
           </button>
         </div>
 
-        <div className="flex justify-center mt-4">
+        {/* <div className="flex justify-center mt-4">
           {Array.from({ length: maxIndex + 1 }).map((_, index) => (
             <button
               key={index}
@@ -101,9 +99,9 @@ const Testimonials = () => {
               }`}
             />
           ))}
-        </div>
+        </div> */}
       </div>
-    </main>
+    </section>
   );
 };
 
