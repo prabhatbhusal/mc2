@@ -58,7 +58,7 @@ const Service = () => {
                   className={`lg:text-[52px] sm:text-3xl  md:text-4xl relative mb-2 sm:mb-4 md:mb-6 transition-all-ease-in-out duration-700 ${
                     hoveredIndex === idx
                       ? "text-white  lg:bottom-[-20px] sm:bottom-[10px]"
-                      : "text-white  lg:bottom-[-80px] sm:bottom-[-80px]"
+                      : "text-white  lg:bottom-[-40px] sm:bottom-[-80px]"
                   }`}
                 >
                   {link.title}
@@ -69,7 +69,7 @@ const Service = () => {
                   className={`text-lg  relative mb-2 w-full lg:w-full md:w-full sm:mb-4 md:mb-6 transition-all-ease-in-out duration-700 ${
                     hoveredIndex === idx
                       ? "text-white opacity-100 block  lg:bottom-[10px] sm:bottom-[30px]"
-                      : "text-white opacity-0 hidden bottom-[-40px] sm:bottom-[-80px]"
+                      : "text-white opacity-0 hidden lg:bottom-[-40px] sm:bottom-[-80px]"
                   }`}
                 >
                   {link.info}
@@ -81,6 +81,7 @@ const Service = () => {
                       : "opacity-0 translate-y-8"
                   } relative bg-primary text-sm sm:text-lg md:text-xl text-white items-center flex font-semibold gap-1 sm:gap-2 p-1 sm:p-2 md:p-3 ml-1 sm:ml-2`}
                   size="lg"
+                  variant="clip_primary"
                 >
                   <Link href={link.link}>
                     <h6 className="font-medium text-sm sm:text-base md:text-lg">

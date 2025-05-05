@@ -7,8 +7,8 @@ import { MdArrowOutward } from "react-icons/md";
 const PageBanner: React.FC<innerpageprops> = (prop: innerpageprops) => {
   return (
     <main>
-      <div className="text-white flex flex-col h-auto min-h-screen md:h-[130vh] items-center font-medium gap-12 md:gap-20 lg:gap-90 bg-[url(/images/car.png)] bg-fill bg-center bg-no-repeat bg-blend-overlay bg-neutral-500 px-4 md:px-6 lg:px-8">
-        <div className="flex flex-col items-center justify-center py-16 md:py-32 lg:py-52 gap-3 md:gap-4 lg:gap-[24px] w-full">
+      <div className="text-white flex flex-col h-auto min-h-screen md:h-[130vh] items-center font-medium gap-12 md:gap-20 lg:gap-80 bg-[url(/images/car.png)] bg-fill bg-center bg-no-repeat bg-blend-overlay bg-neutral-500 px-4 md:px-6 lg:px-8">
+        <div className="flex flex-col items-center justify-center py-16 md:py-32 lg:py-48 gap-3 md:gap-4 lg:gap-[24px] w-full">
           <div className="flex flex-col items-center gap-2 md:gap-[10px]">
             <p className="text-sm md:text-base">24/7 ASSISTANCE</p>
             <hr className="w-12 md:w-15 text-center text-white" />
@@ -32,7 +32,7 @@ const PageBanner: React.FC<innerpageprops> = (prop: innerpageprops) => {
           <div className="w-full md:w-4/5 lg:w-[1122px] flex text-center">
             <p className="font-light">{prop.content}</p>
           </div>
-          <div className="mt-[-25px]">
+          <div className="relative bottom-2">
             <Button variant="default" size="lg">
               <Link
                 href="tel:+2543936078"

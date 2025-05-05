@@ -4,8 +4,8 @@ import { props } from "@/types/common.types";
 const PageBanner: React.FC<props> = (prop) => {
   return (
     <main>
-      <div className="text-white flex flex-col h-auto min-h-screen md:h-[125vh] items-center font-medium gap-12 md:gap-20 lg:gap-90 bg-[url(/images/car.png)] bg-fill bg-center bg-no-repeat bg-blend-overlay bg-neutral-500 px-4 md:px-6 lg:px-8">
-        <div className="flex flex-col items-center justify-center py-16 md:py-32 lg:py-52 gap-3 md:gap-4 lg:gap-[24px] w-full">
+      <div className="text-white flex flex-col h-auto min-h-screen md:h-[110vh] items-center font-medium gap-12 md:gap-20 lg:gap-80 bg-[url(/images/car.png)] bg-fill bg-center bg-no-repeat bg-blend-overlay bg-neutral-500 px-4 md:px-6 lg:px-8">
+        <div className="flex flex-col items-center justify-center py-16 md:py-32 lg:py-48 gap-3 md:gap-4 lg:gap-[24px] w-full">
           <div className="flex flex-col items-center gap-2 md:gap-[10px]">
             <p className="text-sm md:text-base">24/7 ASSISTANCE</p>
             <hr className="w-12 md:w-15 text-center text-white" />

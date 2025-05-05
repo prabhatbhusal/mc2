@@ -35,19 +35,7 @@ const PageBanner:React.FC<props> = (prop) => {
             </p>
           </div>
 
-          <div
-            className="absolute sm:mt-5   mt-3 max-w-md w-[406px] h-[44px] bottom-[-200px] lg:left-[1402px] gap-[10px] p-[10px] sm:left[140px]
-"
-          >
-            <div className="absolute inset-y-0 left-2 flex items-center  pl-3 pointer-events-none ">
-              <Search className="text-gray-400 w-5 h-5 relative top-2" />
-            </div>
-            <input
-              type="text"
-              placeholder="Search..."
-              className="w-full p-10 py-2 border border-gray-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent "
-            />
-          </div>
+          
         </div>
       </div>
     </main>
