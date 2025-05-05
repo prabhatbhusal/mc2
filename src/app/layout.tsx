@@ -101,7 +101,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
-        <Contact />
+        
         <MapSection />
         <Footer />
       </body>

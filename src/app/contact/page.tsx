@@ -1,12 +1,11 @@
-'use client'
+"use client";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
-// Zod schema
+// Define Zod schema for form validation
 const contactSchema = z.object({
   name: z.string().min(1, "Name is required"),
   contact: z
@@ -20,7 +19,7 @@ const contactSchema = z.object({
 
 type ContactFormData = z.infer<typeof contactSchema>;
 
-const Page = () => {
+const Contact = () => {
   const {
     register,
     handleSubmit,
@@ -30,104 +29,111 @@ const Page = () => {
   });
 
   const onSubmit = (data: ContactFormData) => {
-    console.log("Form submitted:", data);
-    // handle submission
+    console.log("Form Data:", data);
+    // handle form submission (e.g., API call)
   };
 
   return (
-    <main>
-      <div className="min-h-screen bg-cover bg-center relative py-16 px-4 md:px-12 lg:px-16 flex flex-col justify-end items-center lg:items-end font-medium gap-6 lg:gap-10">
-        <div className="bg-[#141414] flex flex-col w-full max-w-xl lg:max-w-3xl xl:max-w-4xl py-10 px-6 md:py-12 md:px-10 lg:py-16 lg:px-12 gap-8">
-          <div className="flex flex-col gap-4 justify-center items-center text-white">
-            <p>Your journey matters</p>
-            <hr className="w-12" />
-            <h1 className="text-3xl md:text-4xl lg:text-5xl text-center">
-              <span className="text-primary">Let us </span> know how we can{" "}
-              <span className="text-primary">help.</span>
-            </h1>
+    <section className='py-30'>
+      <div className="container">
+        <div className="flex flex-col items-center lg:flex-row gap-10">
+          <div className="w-full lg:w-1/2 h-full">
+            <video autoPlay muted loop className="h-full w-full">
+              <source src="/video/video2.mp4" type="video/mp4" />
+            </video>
           </div>
-          <form
-            onSubmit={handleSubmit(onSubmit)}
-            className="flex flex-col border-none text-neutral-500 justify-center gap-8"
-          >
-            <div className="flex flex-col">
-              <label htmlFor="name">Name</label>
-              <input
-                id="name"
-                type="text"
-                {...register("name")}
-                className="px-4 py-3 w-full bg-transparent"
-              />
-              <hr className="w-full" />
-              {errors.name && (
-                <p className="text-red-500 text-sm mt-1">
-                  {errors.name.message}
-                </p>
-              )}
-            </div>
-            <div className="flex flex-col">
-              <label htmlFor="contact">Contact</label>
-              <input
-                id="contact"
-                type="text"
-                {...register("contact")}
-                className="px-4 py-3 w-full bg-transparent"
-              />
-              <hr className="w-full" />
-              {errors.contact && (
-                <p className="text-red-500 text-sm mt-1">
-                  {errors.contact.message}
-                </p>
-              )}
-            </div>
-            <div className="flex flex-col">
-              <label htmlFor="email">Email</label>
-              <input
-                id="email"
-                type="email"
-                {...register("email")}
-                className="px-4 py-3 w-full bg-transparent"
-              />
-              <hr className="w-full" />
-              {errors.email && (
-                <p className="text-red-500 text-sm mt-1">
-                  {errors.email.message}
-                </p>
-              )}
-            </div>
-            <div className="flex flex-col">
-              <label htmlFor="message">Message</label>
-              <textarea
-                id="message"
-                {...register("message")}
-                className="px-4 py-3 w-full bg-transparent resize-none"
-                rows={4}
-              />
-              <hr className="w-full" />
-              {errors.message && (
-                <p className="text-red-500 text-sm mt-1">
-                  {errors.message.message}
-                </p>
-              )}
-            </div>
-            <div className="flex justify-end">
-              <Button
-                variant="clip_primary"
-              >
-                <Link href="/contact">
-                  Send Message
-                </Link>
 
-              </Button>
+          <div className="text-white w-full lg:w-1/2 container relative top-10">
+            <div className="flex flex-col gap-2 mb-6">
+              <h3 className="text-base">Contact Us</h3>
+              <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-orbitron hover:text-gray-300 transition duration-300">
+                Get{" "}
+                <span className="text-red-600 hover:text-red-400">Help</span>{" "}
+                Now
+              </h2>
             </div>
-          </form>
-        </div>
-        <div className="text-neutral-500 text-center lg:text-right text-sm md:text-base mt-4 lg:mt-6 w-full px-4">
-          1802 STANDRIDGE ST, KILLEEN, TX 76543, USA
+
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className="flex flex-col gap-6 md:gap-10 text-neutral-600 container "
+            >
+              <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 w-full">
+                <div className="flex flex-col w-full">
+                  <label className="mb-1">Name</label>
+                  <input
+                    type="text"
+                    {...register("name")}
+                    className="border-none bg-transparent"
+                  />
+                  <hr className="text-neutral-700 w-full" />
+                  {errors.name && (
+                    <p className="text-red-500 text-sm mt-1">
+                      {errors.name.message}
+                    </p>
+                  )}
+                </div>
+                <div className="flex flex-col w-full">
+                  <label className="mb-1">Contact</label>
+                  <input
+                    type="text"
+                    {...register("contact")}
+                    className="bg-transparent"
+                  />
+                  <hr className="text-neutral-700 w-full" />
+                  {errors.contact && (
+                    <p className="text-red-500 text-sm mt-1">
+                      {errors.contact.message}
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-6 md:gap-10">
+                <div className="w-full">
+                  <label className="mb-1">Email</label>
+                  <input
+                    type="email"
+                    {...register("email")}
+                    className="w-full bg-transparent"
+                  />
+                  <hr className="text-neutral-700 w-full" />
+                  {errors.email && (
+                    <p className="text-red-500 text-sm mt-1">
+                      {errors.email.message}
+                    </p>
+                  )}
+                </div>
+                <div className="w-full">
+                  <label className="mb-1">Message</label>
+                  <textarea
+                    {...register("message")}
+                    className="w-full bg-transparent resize-none"
+                    rows={4}
+                  />
+                  <hr className="text-neutral-700 w-full" />
+                  {errors.message && (
+                    <p className="text-red-500 text-sm mt-1">
+                      {errors.message.message}
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              <div className="mt-2">
+                <Button
+                  variant="clip_primary"
+                  type="submit"
+                  className="text-white"
+                >
+                  Submit
+                </Button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 
-export default Page;
+export default Contact;

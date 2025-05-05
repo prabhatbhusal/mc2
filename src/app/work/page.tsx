@@ -2,6 +2,7 @@ import React from 'react'
 import Pagebanner from '@/components/AboutPageBanner'
 import {galleryimg} from '@/lib/constants/data'
 import Image from 'next/image'
+import Contact from '@/components/page/landing/contact'
 const page = () => {
   return (
     <main>
@@ -15,7 +16,7 @@ const page = () => {
       />
       <div className="flex flex-col">
         <div>
-          <h2 className="text-3xl md:text-4xl lg:text-[56px] py-3 text-center text-white" >
+          <h2 className="text-3xl md:text-4xl lg:text-[56px] py-3 text-center text-white">
             Gallery
           </h2>
           <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  gap-10">
@@ -31,6 +32,7 @@ const page = () => {
               </div>
             ))}
           </div>
+          <Contact />
         </div>
       </div>
     </main>

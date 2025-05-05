@@ -5,6 +5,7 @@ import PageBanner from "@/components/ServicesBanner";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Contact from "@/components/page/landing/contact";
 
 const Service = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -64,37 +65,38 @@ const Service = () => {
                 </h2>
               </div>
               <div>
-              <p
-                className={`text-lg  relative mb-2 w-full lg:w-full md:w-full sm:mb-4 md:mb-6 transition-all-ease-in-out duration-700 ${
-                  hoveredIndex === idx
-                    ? "text-white opacity-100 block  lg:bottom-[10px] sm:bottom-[30px]"
-                    : "text-white opacity-0 hidden bottom-[-40px] sm:bottom-[-80px]"
-                }`}
-              >
-                {link.info}
-              </p>
-              <Button
-                className={`absolute bottom-3 sm:bottom-5 transform transition-all duration-300 w-[120px] sm:w-[140px] md:w-[15vh] ${
-                  hoveredIndex === idx
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-8"
-                } relative bg-primary text-sm sm:text-lg md:text-xl text-white items-center flex font-semibold gap-1 sm:gap-2 p-1 sm:p-2 md:p-3 ml-1 sm:ml-2`}
-                size="lg"
-              >
-                <Link href={link.link}>
-                  <h6 className="font-medium text-sm sm:text-base md:text-lg">
-                    View More
-                  </h6>
-                </Link>
-                <span className="lg:h-10 lg:w-4 h-10 w-5 bg-primary absolute top-0 lg:right-[-16px] right-[-16px]  sm:right-[-20px]"></span>
-                <span className="lg:h-7 lg:w-5.75 h-7 w-5.75 bg-primary rotate-45 absolute lg:top-7 top-7 lg:left-37 left-27"></span>
-              </Button>
+                <p
+                  className={`text-lg  relative mb-2 w-full lg:w-full md:w-full sm:mb-4 md:mb-6 transition-all-ease-in-out duration-700 ${
+                    hoveredIndex === idx
+                      ? "text-white opacity-100 block  lg:bottom-[10px] sm:bottom-[30px]"
+                      : "text-white opacity-0 hidden bottom-[-40px] sm:bottom-[-80px]"
+                  }`}
+                >
+                  {link.info}
+                </p>
+                <Button
+                  className={`absolute bottom-3 sm:bottom-5 transform transition-all duration-300 w-[120px] sm:w-[140px] md:w-[15vh] ${
+                    hoveredIndex === idx
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 translate-y-8"
+                  } relative bg-primary text-sm sm:text-lg md:text-xl text-white items-center flex font-semibold gap-1 sm:gap-2 p-1 sm:p-2 md:p-3 ml-1 sm:ml-2`}
+                  size="lg"
+                >
+                  <Link href={link.link}>
+                    <h6 className="font-medium text-sm sm:text-base md:text-lg">
+                      View More
+                    </h6>
+                  </Link>
+                  <span className="lg:h-10 lg:w-4 h-10 w-5 bg-primary absolute top-0 lg:right-[-16px] right-[-16px]  sm:right-[-20px]"></span>
+                  <span className="lg:h-7 lg:w-5.75 h-7 w-5.75 bg-primary rotate-45 absolute lg:top-7 top-7 lg:left-37 left-27"></span>
+                </Button>
               </div>
               <div className="flex items-end justify-end"></div>
             </div>
           </div>
         ))}
       </div>
+      <Contact />
     </main>
   );
 };

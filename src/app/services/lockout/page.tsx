@@ -2,6 +2,7 @@ import PageBanner from "@/components/InnerServicesBanner";
 import Carsprop from "@/components/Carsprop";
 import React from "react";
 import Getback from "@/components/Getback";
+import Contact from "@/components/page/landing/contact";
 
 const towing = () => {
   return (
@@ -18,6 +19,9 @@ const towing = () => {
       <Carsprop title="Lock Out Service" img="/images/lockout.png" />
       <div>
         <Getback />
+      </div>
+      <div>
+        <Contact />
       </div>
     </div>
   );
