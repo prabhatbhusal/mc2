@@ -5,7 +5,7 @@ import { Search } from 'lucide-react';
 const PageBanner:React.FC<props> = (prop) => {
   return (
     <main>
-      <div className="text-white flex flex-col h-[125vh] items-center font-medium  lg:gap-90 md:gap-45 sm:gap-30 gap-20  bg-[url(/images/car.png)]  bg-fill bg-center bg-no-repeat bg-blend-overlay bg-neutral-500 ">
+      <div className="text-white flex flex-col lg:h-[125vh] md:[100vh] h-[90vh]  items-center font-medium  lg:gap-80 md:gap-45 sm:gap-30 gap-20  bg-[url(/images/car.png)]  bg-fill bg-center bg-no-repeat bg-blend-overlay bg-neutral-500 ">
         <div className="flex flex-col items-center justify-center lg:py-52 py-30   gap-[24px]">
           <div className="flex flex-col items-center gap-[10px]">
             <p className="">24/7 ASSISTANCE</p>
@@ -35,7 +35,7 @@ const PageBanner:React.FC<props> = (prop) => {
             </p>
           </div>
 
-          
+
         </div>
       </div>
     </main>
