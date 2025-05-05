@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 // Zod schema
 const contactSchema = z.object({
@@ -111,15 +112,12 @@ const Page = () => {
             </div>
             <div className="flex justify-end">
               <Button
-                size="lg"
-                type="submit"
-                className="relative bg-primary text-white items-center flex font-semibold gap-2 p-2 sm:p-3"
+                variant="clip_primary"
               >
-                <h6 className="font-semibold text-base md:text-lg">
+                <Link href="/contact">
                   Send Message
-                </h6>
-                <span className="h-10 w-5 bg-primary absolute top-0 right-[-20px] hidden md:block"></span>
-                <span className="h-7 w-6 bg-primary rotate-45 absolute lg:top-7 lg:right-[-2px] translate-x-3 hidden md:block"></span>
+                </Link>
+
               </Button>
             </div>
           </form>
