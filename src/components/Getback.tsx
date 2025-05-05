@@ -2,6 +2,7 @@ import React from "react";
 import { MdOutlinePhone } from "react-icons/md";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const Getback = () => {
   return (
@@ -46,15 +47,14 @@ const Getback = () => {
                 <span className="hidden md:block h-10 w-5 bg-primary absolute top-0 right-[-20px]"></span>
                 <span className="hidden md:block h-7 w-7 bg-primary rotate-45 absolute top-[26px] right-[-14px]"></span>
               </Button>
-              <Button
-                size="lg"
-                className="relative bg-transparent border-2 border-primary text-base  lg:w-75 md:w-75 w-75 md:text-xl lg:border-r-0 text-white items-center flex  font-regular gap-2 p-2 sm:p-3"
-              >
-                <h6 className="text-primary font-light whitespace-nowrap overflow-hidden">
-                  Request Service Online
-                </h6>
-                <span className="hidden md:block h-10 w-5 border-primary border-2 border-l-0 border-b-0 bg-transparent absolute top-[-1.5px] right-[-20px]"></span>
-                <span className="hidden md:block h-7 w-7 border-primary border-2 border-t-0 border-l-0 border-y-0 bg-transparent rotate-45 absolute top-[26px] sm:right-0 lg:right-[-14px] "></span>
+              <Button variant="clip_primary_outline" size="lg">
+                <Link
+                  href="tel:+2543936078"
+                  className="flex items-center gap-2 uppercase"
+                >
+                  <span className="font-light">Request Online Assistance</span>
+
+                </Link>
               </Button>
             </div>
           </div>

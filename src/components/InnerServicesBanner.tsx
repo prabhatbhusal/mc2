@@ -2,6 +2,7 @@ import React from "react";
 import { innerpageprops } from "@/types/common.types";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { MdArrowOutward } from "react-icons/md";
 
 const PageBanner: React.FC<innerpageprops> = (prop: innerpageprops) => {
   return (
@@ -31,16 +32,14 @@ const PageBanner: React.FC<innerpageprops> = (prop: innerpageprops) => {
           <div className="w-full md:w-4/5 lg:w-[1122px] flex text-center">
             <p className="font-light">{prop.content}</p>
           </div>
-          <div className="mt-4">
-            <Button
-              size="lg"
-              className="relative bg-primary text-white items-center flex font-semibold gap-2 md:gap-5 p-3 lg:p-4"
-            >
-              <Link href='#'>
-                <h6 className="font-light text-sm md:text-base lg:text-lg">
-                  Starting Price <br />
-                  {prop.price}
-                </h6>
+          <div className="mt-[-25px]">
+            <Button variant="default" size="lg">
+              <Link
+                href="tel:+2543936078"
+                className="flex items-center gap-2 uppercase"
+              >
+                <span className="font-light">Call for price</span>
+                <MdArrowOutward />
               </Link>
             </Button>
           </div>

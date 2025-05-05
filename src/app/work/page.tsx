@@ -15,11 +15,19 @@ const page = () => {
       />
       <div className="flex flex-col">
         <div>
-          <h2>Gallery</h2>
-          <div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  gap-10'>
+          <h2 className="text-3xl md:text-4xl lg:text-[56px] py-3 text-center text-white" >
+            Gallery
+          </h2>
+          <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  gap-10">
             {galleryimg.map((link, idx) => (
               <div className="" key={idx}>
-                <Image src={link.src} alt={link.alt} width={1000} height={50} className='h-100 object-cover bg-center '  />
+                <Image
+                  src={link.src}
+                  alt={link.alt}
+                  width={1000}
+                  height={50}
+                  className="h-100 object-cover bg-center "
+                />
               </div>
             ))}
           </div>

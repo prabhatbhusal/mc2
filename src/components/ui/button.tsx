@@ -18,7 +18,7 @@ const buttonVariants = cva(
         clip_secondary:
           "clip-custom bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
         clip_primary_outline:
-          "clip-custom bg-transparent text-primary ",
+          "clip-custom bg-transparent text-primary border-2 border-primary",
         clip_secondary_outline:
           "clip-custom bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
         link: "text-primary underline-offset-4 hover:underline",
