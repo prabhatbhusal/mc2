@@ -35,7 +35,7 @@ const Contact = () => {
 
   return (
     <section>
-      <div className="container py-10">
+      <div className="px-[100px] py-20">
         <div className="flex flex-col items-center lg:flex-row gap-10">
           <div className="w-full lg:w-1/2 h-full">
             <video
