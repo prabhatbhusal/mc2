@@ -313,79 +313,25 @@ export const aboutdata = [
 ];
 
 export const galleryimg = [
-  {
-    src: "/Services/Towing.jpg",
-    alt: "Image 1",
-  },
-  { src: "/Services/mobile.jpg", alt: "Image 1" },
-  { src: "/Services/Batteryreplace.png", alt: "Image 1" },
-  { src: "/Services/tirerepair.jpg", alt: "Image 1" },
-  {
-    src: "/Gallery/image-1.png",
-    alt: "Image 1",
-  },
-  {
-    src: "/Gallery/image-2.png",
-    alt: "Image 2",
-  },
-  {
-    src: "/Gallery/image-3.png",
-    alt: "Image 3",
-  },
-  {
-    src: "/Gallery/image-4.png",
-    alt: "Image 4",
-  },
-  {
-    src: "/Gallery/image-6.png",
-    alt: "Image 5",
-  },
-  {
-    src: "/Gallery/image-15.png",
-    alt: "Image 6",
-  },
-  {
-    src: "/Gallery/image-8.png",
-    alt: "Image 7",
-  },
-  {
-    src: "/Gallery/image-9.png",
-    alt: "Image 1",
-  },
-  {
-    src: "/Gallery/image-10.png",
-    alt: "Image 2",
-  },
-  {
-    src: "/Services/Jumpstart.jpg",
-    alt: "Image 3",
-  },
-  {
-    src: "/Gallery/image-12.png",
-    alt: "Image 4",
-  },
-  {
-    src: "/Gallery/image-13.png",
-    alt: "Image 5",
-  },
-  {
-    src: "/Gallery/image-5.png",
-    alt: "Image 6",
-  },
-  {
-    src: "/Gallery/image-15.png",
-    alt: "Image 7",
-  },
-  {
-    src: "/Services/lockout.jpg",
-    alt: "Image 7",
-  },
-  {
-    src: "/Services/Heavyduty.jpg",
-    alt: "Image 7",
-  },
-  {
-    src: "/Services/roadside.jpg",
-    alt: "Image 7",
-  },
+  { id: 1, src: "/Services/Towing.jpg", alt: "Image 1" },
+  { id: 2, src: "/Services/mobile.jpg", alt: "Image 1" },
+  { id: 3, src: "/Services/Batteryreplace.png", alt: "Image 1" },
+  { id: 4, src: "/Services/tirerepair.jpg", alt: "Image 1" },
+  { id: 5, src: "/Gallery/image-1.png", alt: "Image 1" },
+  { id: 6, src: "/Gallery/image-2.png", alt: "Image 2" },
+  { id: 7, src: "/Gallery/image-3.png", alt: "Image 3" },
+  { id: 8, src: "/Gallery/image-4.png", alt: "Image 4" },
+  { id: 9, src: "/Gallery/image-6.png", alt: "Image 5" },
+  { id: 10, src: "/Gallery/image-15.png", alt: "Image 6" },
+  { id: 11, src: "/Gallery/image-8.png", alt: "Image 7" },
+  { id: 12, src: "/Gallery/image-9.png", alt: "Image 1" },
+  { id: 13, src: "/Gallery/image-10.png", alt: "Image 2" },
+  { id: 14, src: "/Services/Jumpstart.jpg", alt: "Image 3" },
+  { id: 15, src: "/Gallery/image-12.png", alt: "Image 4" },
+  { id: 16, src: "/Gallery/image-13.png", alt: "Image 5" },
+  { id: 17, src: "/Gallery/image-5.png", alt: "Image 6" },
+  { id: 18, src: "/Gallery/image-15.png", alt: "Image 7" },
+  { id: 19, src: "/Services/lockout.jpg", alt: "Image 7" },
+  { id: 20, src: "/Services/Heavyduty.jpg", alt: "Image 7" },
+  { id: 21, src: "/Services/roadside.jpg", alt: "Image 7" },
 ];
